@@ -1,391 +1,377 @@
 ---
-theme: seriph
-background: https://images.unsplash.com/photo-1614850523296-d8c1af93d400?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80
-class: text-center
-highlighter: shiki
-lineNumbers: false
-drawings:
-  persist: false
-transition: slide-left
-title: Tainan Park Activity Platform Full Case Study
+# Try to use 'default' theme for better experience
+# See: https://sli.dev/themes/gallery.html
+theme: default
+# The background image is a URL.
+background: 'https://images.unsplash.com/photo-1525383547365-11f33578ba4c?q=80&w=2070&auto=format&fit=crop'
+# Class applies to all slides.
+class: 'text-center'
+# Or use UnoCSS to style it.
 css: unocss
+# Slide-level transition.
+transition: slide-left
+# Title in the HTML, for SEO.
+title: 'Tainan Park Activity Platform: A UX Case Study'
+# Information for the info-dialog.
+info: This is a UX case study about a platform that can help shy teenagers socialize in Tainan Park.
+# Enable table of contents.
+toc: true
+# Enable speaker notes.
+speaker: true
 ---
 
 # <span class="text-white drop-shadow-xl text-6xl font-bold italic tracking-tighter">台南公園輕社交平台</span>
-## <span class="text-white/80 tracking-widest mt-4 block font-light text-2xl">從行為觀察到「反思型社交」的設計實踐</span>
+# <span class="text-white drop-shadow-xl text-6xl font-bold italic tracking-tighter">Tainan Park Activity Platform</span>
+<p class="text-white/80 tracking-widest mt-4 block font-light text-2xl">從行為觀察到「反思型社交」的設計實踐</p>
+<p class="text-white/80 tracking-widest mt-2 block font-light text-2xl">From Behavioral Observation to "Reflective Socialization" Design Practice</p>
 
-<div class="pt-20 flex justify-center text-sm font-mono">
-  <div class="backdrop-blur-md bg-white/10 border border-white/20 px-8 py-4 rounded-2xl shadow-2xl">
-    UX COMPLETE CASE STUDY | 30 PAGES DOCUMENTATION
+<div class="pt-12">
+  <div class="inline-block backdrop-blur-md bg-white/10 border border-white/20 px-8 py-4 rounded-2xl shadow-2xl">
+    <p class="font-mono text-sm">UX COMPLETE CASE STUDY</p>
   </div>
 </div>
+
+<!--
+大家好，我們是第Ｘ組，今天要報告的主題是「台南公園輕社交平台」。這是一個關於如何透過數位設計，幫助害羞或慢熟的年輕人，在他們感到舒適的步調下，重新與公共空間建立連結的專案。我們的報告將會從最初的田野觀察開始，一路帶大家看到我們如何定義問題、發展人物誌，並最終設計出一個以「反思型社交」為核心的數位平台。
+-->
+
+---
+layout: toc
+---
+
+<!--
+這是我們今天的報告大綱，主要會分成三個部分：第一部分是「設計問題探索」，我們會說明如何從零開始，透過觀察與研究來界定核心問題。第二部分是「設計解答探索」，這裡會展示我們的設計概念、原型以及如何透過測試來優化它。最後，我們會總結這個專案的價值與我們的反思。
+-->
 
 ---
 layout: section
 ---
 
-# PART I: DISCOVERY
-### 田野觀察與問題界定
+# PART I
+## 設計問題探索
+## Design Discovery
+
+<!--
+好的，讓我們進入第一部分：設計問題探索。這個章節的核心目標，不是急著找答案，而是專注於「問對問題」。我們會展示如何從一片廣泛的現象中，逐步收斂，最終找到那個最值得我們解決的痛點。
+-->
 
 ---
 
-# 1. 核心疑問：為何退回個人世界？
+# 場域評選
+# Site Selection
 
-當使用者身在公共空間，卻仍然選擇退回個人世界時，他們真正的需求是什麼？
-
-- **觀察現象**：年輕學生在公園、通勤或等待中，長時間使用手機。
-- **心理矛盾**：呈現一種「獨自、分心、卻又不完全放鬆」的狀態。
-- **設計起點**：不直接想解法，而是從行為背後的動機出發。
-
----
-
-# 2. 田野觀察完整紀錄 (U1 - U6)
-
-<div class="grid grid-cols-2 gap-4 text-[10px] font-light">
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10">
-    <p class="font-bold text-blue-300">(U1) 騎車小孩</p>
-    <p>穿著黑衣、獨自騎車。喜歡觀察行人對話，對公園路徑展現極高熟悉度。</p>
+<div class="grid grid-cols-3 gap-8 text-left">
+  <div>
+    <h3 class="font-bold text-xl mb-2 flex items-center gap-2"><div class="i-carbon-market w-6 h-6 text-orange-400"></div>大東夜市</h3>
+    <p class="text-sm text-white/80">目標在於解決「效率」與「便利性」問題，例如排隊、點餐。但社交行為多限於商業交易，且環境壓力高。</p>
+    <p class="text-sm text-white/80 mt-2">Focus on efficiency and convenience (queuing, ordering). Social interaction is limited to transactions in a high-pressure environment.</p>
   </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10">
-    <p class="font-bold text-pink-300">(U2) 散步情侶</p>
-    <p>邊走邊滑手機，社交氛圍極度私密且快樂，外界難以介入。</p>
+  <div>
+    <h3 class="font-bold text-xl mb-2 flex items-center gap-2"><div class="i-carbon-tree w-6 h-6 text-teal-400"></div><span class="bg-teal-400/20 px-2 py-1 rounded">台南公園 (決選)</span></h3>
+    <p class="text-sm text-white/80">一個完全去目的化的開放空間，存在嚴重的「數位孤島」現象。這裡的低壓力特質，是我們實驗「心理模型」的最佳場所。</p>
+    <p class="text-sm text-white/80 mt-2">A non-purposed, open space exhibiting a "digital island" phenomenon. Its low-pressure nature makes it ideal for experimenting with psychological models.</p>
   </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10 text-slate-400 italic">
-    <p class="font-bold">(U3) 長凳友人</p>
-    <p>分享手機螢幕、在樹下涼快，屬於封閉的小圈圈互動。</p>
-  </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10">
-    <p class="font-bold text-amber-300">(U4) 涼亭長者</p>
-    <p>整理物品、喝水抽菸，對環境有強烈地盤意識與固定行為。</p>
-  </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10">
-    <p class="font-bold text-amber-300">(U5) 玩牌長者</p>
-    <p>全神貫注於牌局，對觀察者展現出警覺性。</p>
-  </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10 ring-1 ring-sky-400/50">
-    <p class="font-bold text-sky-300">(U6) 運動長者 (關鍵樣本)</p>
-    <p>主動詢問「今天不是假日嗎？」語氣友善但不真誠，引發觀察者社交焦慮。</p>
+  <div>
+    <h3 class="font-bold text-xl mb-2 flex items-center gap-2"><div class="i-carbon-building w-6 h-6 text-sky-400"></div>銀同社區</h3>
+    <p class="text-sm text-white/80">目標在於「紀錄」與「傳承」，將老街的記憶數位化。但互動多為單向聆聽，較缺乏雙向社交的潛力。</p>
+    <p class="text-sm text-white/80 mt-2">Focus on documentation and preservation by digitizing historical narratives. Interaction is mostly one-way, lacking potential for reciprocal socializing.</p>
   </div>
 </div>
 
+<p class="mt-8 text-center text-lg font-bold">我們選擇台南公園，因為它提供了一個巨大的設計空白：<br>如何重新連結「身在公園，心在手機」的人們。</p>
+<p class="mt-2 text-center text-lg font-bold text-white/80">We chose Tainan Park to address a design gap: reconnecting people who are physically present but mentally elsewhere.</p>
+
+<!--
+在專案初期，我們評估了三個潛在場域。夜市的核心是「效率」，社區的核心是「傳承」，但只有台南公園，它的核心問題是關於「人的行為與心理斷層」。我們觀察到一個非常有趣的現象，我們稱之為「數位孤島」——人們身處在一個開放的公共空間，卻選擇退回到手機的個人世界裡。這個矛盾的現象，讓我們決定把台南公園當作我們深入研究的對象。
+-->
+
 ---
 
-# 3. 田野觀察完整紀錄 (U7 - U12)
+# 田野觀察與行為聚類
+# Field Study & Behavioral Clustering
 
-<div class="grid grid-cols-2 gap-4 text-[10px] font-light">
-  <div class="backdrop-blur-md bg-yellow-500/10 p-3 rounded-xl border border-yellow-500/30">
-    <p class="font-bold text-yellow-300">(U7) 南二中同學 (核心族群)</p>
-    <p>模仿短片內容、抱怨段考、集體等車。身體在場但心理依賴數位群體。</p>
+<div class="grid grid-cols-2 gap-4 text-left">
+  <div>
+    <h3 class="font-bold text-lg mb-2">U1-U12 使用者觀察 (User Observation)</h3>
+    <p class="text-sm text-white/70">我們紀錄了 12 組在公園內的典型使用者，從獨自騎車的小孩、熱鬧成群的學生，到安靜玩牌的長者。這些第一手資料是我們後續分析的基礎。</p>
+    <p class="text-sm text-white/70 mt-2">We documented 12 typical user groups in the park, from a child biking alone and lively students to quiet elderly card players. This firsthand data formed the basis of our analysis.</p>
+    <!-- <img src="/data/recreated_plot.png" class="mt-4 rounded-lg shadow-lg" alt="Behavioral Analysis Plot"> -->
   </div>
-  <div class="backdrop-blur-md bg-yellow-500/10 p-3 rounded-xl border border-yellow-500/30">
-    <p class="font-bold text-yellow-300">(U8) 大學生</p>
-    <p>專注遊戲與通訊軟體，行動電源不離手，維持長時數位連結。</p>
-  </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10 text-slate-400">
-    <p class="font-bold">(U9) 等車者</p>
-    <p>頻繁查看公車 App，因出汗與人潮擁擠顯得焦躁不安。</p>
-  </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10">
-    <p class="font-bold text-blue-200">(U10) 遊樂區小孩</p>
-    <p>使用滑索與設施，純粹的體力消耗，無複雜社交需求。</p>
-  </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10">
-    <p class="font-bold text-emerald-200">(U11) 顧小孩家長</p>
-    <p>樹蔭下回訊息、偶爾交談。維持「多重任務」的零碎社交。</p>
-  </div>
-  <div class="backdrop-blur-md bg-white/5 p-3 rounded-xl border border-white/10">
-    <p class="font-bold text-indigo-300">(U12) 慢跑男子</p>
-    <p>耳機隔絕外界，沉浸在穩定的運動頻率中。</p>
+  <div>
+    <h3 class="font-bold text-lg mb-2">DBSCAN 聚類分析 (Clustering Analysis)</h3>
+    <p class="text-sm text-white/70">透過演算法，我們將觀察數據歸納出四個核心群體：</p>
+    <ul class="text-sm space-y-2 mt-4 text-white/90">
+      <li><span class="bg-red-500/20 text-red-300 px-2 py-0.5 rounded">A組</span>: 高頻流動者 (Movers)</li>
+      <li><span class="bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded">B組</span>: 封閉社交者 (Closed Groups)</li>
+      <li><span class="bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded">C組</span>: 靜態停留者 (Observers)</li>
+      <li><span class="bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded">D組</span>: 場域佔有者 (Territorial)</li>
+    </ul>
+    <p class="text-sm text-white/70 mt-4">這個分析幫助我們發現了不同群體間的「社交真空地帶」，也就是那些既不完全封閉、也不完全開放的潛在社交機會。</p>
+    <p class="text-sm text-white/70 mt-2">This analysis helped us identify a "social vacuum"—the untapped social potential between different user groups.</p>
   </div>
 </div>
 
----
-
-# 4. 同理心地圖：理解行為背後的心理
-
-
-
-[Image of Empathy Map: Say, Do, Think, Feel]
-
-
-<div class="grid grid-cols-2 gap-4 mt-4 text-xs">
-  <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-    <h4 class="text-blue-300 mb-1">說什麼 (Say)</h4>
-    <p class="text-white/60 italic font-light">「超扯！那個 Reels 你按讚沒？」<br>「公車還有五分鐘到...」</p>
-  </div>
-  <div class="p-3 bg-white/5 rounded-xl border border-white/10">
-    <h4 class="text-emerald-300 mb-1">想什麼 (Think)</h4>
-    <p class="text-white/60 italic font-light">「可以再滑五分鐘，時間還夠。」<br>「如果被補習班老師發現遲到就慘了。」</p>
-  </div>
-</div>
+<!--
+接著，我們在公園進行了深度的田野觀察，並將質化資料量化成九個維度。透過DBSCAN演算法，我們識別出了四種高度相似的行為群體。例如A組是慢跑者、騎車小孩這類「高頻流動者」，他們的社交機會非常短暫。B組則是情侶或好友，他們是「封閉社交者」，很難被外界打擾。這個分析最重要的發現，是我們看到了群體之間的「社交真空地帶」，這也成為我們後續設計的切入點。
+-->
 
 ---
 
-# 5. 行為模式萃取：兩極化的社交現象
+# 人物誌：楊子萱
+# Persona: Yang Zixuan
 
-我們發現公園內的行為分佈呈現兩極：
-
-<div class="flex justify-around items-center mt-12 gap-8 text-center">
-  <div class="flex-1 backdrop-blur-md bg-white/5 p-6 rounded-3xl border border-white/10 shadow-xl">
-    <div class="text-3xl mb-2 text-pink-300">🔒</div>
-    <h3 class="text-xs font-bold mb-2">封閉圈</h3>
-    <p class="text-[9px] text-white/50 leading-relaxed italic">關係網絡已固化，<br>外人難以加入。</p>
+<div class="grid grid-cols-[1fr_2fr] gap-8 text-left items-center">
+  <div class="flex flex-col items-center">
+    <!-- <img src="/data/user_persona.png" class="w-48 h-48 rounded-full object-cover border-4 border-white/20 shadow-lg"> -->
+    <h3 class="font-bold text-2xl mt-4">楊子萱</h3>
+    <p class="text-white/80">16歲，高一 (16, High School Student)</p>
+    <p class="text-white/70 mt-1">害羞、慢熟、觀察型 (Shy, Slow to warm up, Observer)</p>
   </div>
-  <div class="flex-1 border-y border-white/20 py-4 italic text-sm text-yellow-200">
-    社交真空區
-  </div>
-  <div class="flex-1 backdrop-blur-md bg-white/5 p-6 rounded-3xl border border-white/10 shadow-xl">
-    <div class="text-3xl mb-2 text-blue-300">🎧</div>
-    <h3 class="text-xs font-bold mb-2">孤立島</h3>
-    <p class="text-[9px] text-center text-white/50 leading-relaxed italic">藉由數位設備，<br>在公共空間自保。</p>
+  <div>
+    <div class="mb-4">
+      <h4 class="font-bold text-lg flex items-center gap-2"><div class="i-carbon-pain w-6 h-6 text-red-400"></div>痛點 (Pain Points)</h4>
+      <ul class="list-disc list-inside text-sm text-white/80 pl-2 space-y-1 mt-1">
+        <li>學校社交圈已固化，難以融入 (School social circles are fixed and hard to join.)</li>
+        <li>大型或吵鬧的活動讓她倍感壓力 (Large or noisy events are stressful.)</li>
+        <li>害怕一個人參加活動會很奇怪 (Fears attending events alone will be awkward.)</li>
+        <li>不知道如何自然地開啟對話 (Doesn't know how to start conversations naturally.)</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold text-lg flex items-center gap-2"><div class="i-carbon-intent-request-create w-6 h-6 text-green-400"></div>需求 (Needs)</h4>
+      <ul class="list-disc list-inside text-sm text-white/80 pl-2 space-y-1 mt-1">
+        <li>一個能「自然融入」的契機 (An opportunity to "fit in naturally.")</li>
+        <li>低壓力、不需要強勢社交的活動 (Low-pressure events that don't require assertive socializing.)</li>
+        <li>能預先知道活動氛圍，建立安全感 (Ability to know the event's vibe beforehand to feel secure.)</li>
+        <li>找到步調相似、不必假裝外向的朋友 (To find like-minded friends without having to pretend to be extroverted.)</li>
+      </ul>
+    </div>
   </div>
 </div>
 
----
-
-# 6. 行為與心理狀態維度分析
-
-
-
-我們分析了多個維度：
-- **移動性**：靜止狀態 vs. 快速移動。
-- **目的性**：漫無目的 vs. 有明確目標。
-- **互動度**：無設施互動 vs. 深度使用。
-- **情緒**：焦慮/分心 vs. 舒適放鬆。
+<!--
+基於我們的研究，我們建立了我們的核心使用者人物誌——楊子萱。她是一位16歲的高一學生，個性害羞、慢熟，習慣先觀察再行動。她渴望交朋友，但學校的社交圈已經固定，而傳統的社交活動又讓她壓力很大。她的核心需求是找到一個「安全的、低壓力的、能自然融入」的社交機會。子萱是我們後續所有設計思考的中心。
+-->
 
 ---
 
-# 7. 數據視覺化：社交座標軸
+# 核心問題定義
+# Problem Definition
 
-[Image 1: User Segmentation Matrix on Tainan Park]
-
-- **發現**：大多數使用者（U1-U12）分佈在兩極。
-- **缺口**：缺乏一個「有目的性、但低社交門檻」的中介空間。
-
----
-
-# 8. 關鍵轉折 (The Pivot)
-
-與其做導覽，不如解決**「想交朋友但不知道怎麼開始」**的恐懼。
-
-- **觀察點**：青少年在公園「等公車」或「消磨時間」的空檔是潛在社交窗口。
-- **痛點**：目前的社交活動預設使用者是「外向」的。
-- **對策**：將公園視為「低壓力的中介空間」。
-
----
-layout: section
----
-
-# PART II: DEFINITION
-### 人物誌與利害關係人
-
----
-
-# 9. Persona：楊子萱 (16歲，高一)
-
-
-
-<div class="grid grid-cols-2 gap-8 mt-6 text-sm font-light leading-relaxed">
-  <div class="backdrop-blur-md bg-white/5 p-4 rounded-xl">
-    <h4 class="text-blue-300 font-bold mb-2">行為特徵</h4>
-    <ul class="list-disc list-inside space-y-1 opacity-70">
-      <li>長時間滑手機避免眼神互動</li>
-      <li>在既有群體外圍徘徊</li>
-      <li>需要放鬆但容易被打斷</li>
+<div class="grid grid-cols-2 gap-8 text-left">
+  <div>
+    <h3 class="font-bold text-xl mb-4">Jobs-To-Be-Done (JTBD)</h3>
+    <p class="text-sm text-white/80 mb-2">子萱想「雇用」一個產品來幫她完成什麼任務？</p>
+    <p class="text-sm text-white/80 mb-2">What job would Zixuan "hire" a product to do for her?</p>
+    <ul class="space-y-3 text-sm">
+      <li class="backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10">
+        <p class="font-bold">尋求低壓力參與</p><p>Seeking Low-Pressure Participation</p>
+        <p class="text-white/70">讓她可以安心踏出第一步，不必被迫聊天。</p>
+      </li>
+      <li class="backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10">
+        <p class="font-bold">預知活動氛圍</p><p>Previewing Event Atmosphere</p>
+        <p class="text-white/70">讓她能降低焦慮，心理有底才願意前往。</p>
+      </li>
     </ul>
   </div>
-  <div class="backdrop-blur-md bg-white/5 p-4 rounded-xl">
-    <h4 class="text-pink-300 font-bold mb-2">情境需求</h4>
-    <ul class="list-disc list-inside space-y-1 opacity-70">
-      <li>渴望校外的新關係</li>
-      <li>需要「安心感」的設計</li>
-      <li>不想被迫參與高互動遊戲</li>
+  <div>
+    <h3 class="font-bold text-xl mb-4">How Might We...?</h3>
+    <p class="text-sm text-white/80 mb-2">我們該如何將挑戰轉化為設計機會？</p>
+    <p class="text-sm text-white/80 mb-2">How can we turn challenges into design opportunities?</p>
+    <ul class="space-y-3 text-sm">
+      <li class="backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10">
+        <p class="font-bold">HMW... 提供一個讓她感到有隱私的角落？</p>
+        <p>HMW... provide a corner that makes her feel private?</p>
+      </li>
+      <li class="backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10">
+        <p class="font-bold">HMW... 讓她在不與人交談下，預約公園的特定空間？</p>
+        <p>HMW... allow her to reserve a specific space in the park without interacting with anyone?</p>
+      </li>
     </ul>
   </div>
 </div>
 
----
-
-# 10. 子萱的心聲：現實社交困境
-
-- **社交圈固定化**：後來加入的人往往成為局外人。
-- **高心理壓力**：不知道如何開啟對話，怕顯得格格不入。
-- **外向者的專屬**：許多活動要求「快速破冰」，對子萱來說是災難。
-
----
-
-# 11. 公園作為「中介空間」的優勢
-
-
-
-1. **開放且免費**：沒有消費壓力與門檻。
-2. **沒有角色期待**：可以是散步者，也可以是發呆者。
-3. **適合「一起做事」**：透過共同活動產生連結，比面對面交談更自在。
-
----
-
-# 12. 利害關係人地圖 (Stakeholder Map)
-
-[Image 2: Stakeholder Map - Internal/External/Context]
-
-- **核心**：青少年使用者 (U7, U8)。
-- **外部**：老人 (U6, U4, U5)、家長 (U11)。
-- **環境**：公車系統、公園設施管理單位。
-
----
-
-# 13. JTBD：子萱的關鍵任務
-
-1. **降低啟動門檻**：不需要像賭博一樣參加活動。
-2. **篩選適合氛圍**：先選擇「社交方式」，再選擇「活動」。
-3. **心理緩衝**：需要一個漸進式參與的選項。
+<!--
+為了讓問題更聚焦，我們用了兩個框架。首先是 Jobs-To-Be-Done，我們問自己：子萱想要「雇用」一個產品來完成什麼工作？答案是「尋求低壓力參與」和「預知活動氛圍」。接著，我們用 How Might We 的句型來發想機會點，例如：「我們該如何，為她提供一個有隱私感的角落？」這些思考幫助我們將模糊的需求轉化為具體的設計方向。
+-->
 
 ---
 layout: section
 ---
 
-# PART III: CONCEPT & DESIGN
-### 概念發展與設計方案
+# PART II
+## 設計解答探索
+## Solution Exploration
+
+<!--
+現在進入第二部分：設計解答探索。在這個章節，我們會展示如何回應前面定義出的問題，從概念發想、原型製作，到最終的測試與迭代。
+-->
 
 ---
 
-# 14. 核心翻轉：反思型社交
+# 設計情境：子萱的一天
+# Design Scenario: A Day with Zixuan
 
-**「不是不想交朋友，而是怎麼開始。」**
+<div class="grid grid-cols-4 gap-4 items-start h-full text-sm">
+  <div class="flex flex-col items-center">
+    <div class="i-carbon-face-dissatisfied w-20 h-20 text-red-300"></div>
+    <h4 class="font-bold mt-2">1. 感到孤單</h4>
+    <h4 class="font-bold">Feeling Lonely</h4>
+    <p class="text-white/70 mt-1">在學校感覺格格不入，渴望新的社交圈。</p>
+    <p class="text-white/70 mt-1 text-xs">Feels out of place at school, longs for a new social circle.</p>
+  </div>
+  <div class="flex flex-col items-center">
+    <div class="i-carbon-search w-20 h-20 text-sky-300"></div>
+    <h4 class="font-bold mt-2">2. 發現平台</h4>
+    <h4 class="font-bold">Discovers the Platform</h4>
+    <p class="text-white/70 mt-1">看到平台能用「社交強度」篩選活動，感到好奇。</p>
+    <p class="text-white/70 mt-1 text-xs">Sees that the platform can filter activities by "social intensity" and is intrigued.</p>
+  </div>
+  <div class="flex flex-col items-center">
+    <div class="i-carbon-camera w-20 h-20 text-yellow-300"></div>
+    <h4 class="font-bold mt-2">3. 加入活動</h4>
+    <h4 class="font-bold">Joins an Activity</h4>
+    <p class="text-white/70 mt-1">選擇了「夕陽散步＋手機攝影」的低壓力活動。</p>
+    <p class="text-white/70 mt-1 text-xs">Chooses a low-pressure "Sunset Walk + Phone Photography" activity.</p>
+  </div>
+  <div class="flex flex-col items-center">
+    <div class="i-carbon-face-satisfied w-20 h-20 text-green-300"></div>
+    <h4 class="font-bold mt-2">4. 建立連結</h4>
+    <h4 class="font-bold">Builds Connections</h4>
+    <p class="text-white/70 mt-1">透過共同任務自然地與人互動，不再感到焦慮。</p>
+    <p class="text-white/70 mt-1 text-xs">Interacts with others naturally through a shared task, feeling less anxious.</p>
+  </div>
+</div>
+<p class="mt-4 text-center">平台提供了一個「緩衝」，讓她敢於邁出第一步。</p>
+<p class="mt-1 text-center text-white/80">The platform provides a "buffer," giving her the courage to take the first step.</p>
 
-- **傳統模式**：活動內容 → 人員湊齊 → 強制社交。
-- **本案概念**：社交強度篩選 → 低壓任務 → 自然連結。
-
----
-
-# 15. 概念發展圖
-
-[Image 3: Concept Development and Storyboard Flow]
-
-從子萱在校門口感到無聊，到她透過 App 發現適合的「低強度攝影活動」，最後在公園內與志同道合的人建立連結。
-
----
-
-# 16. 設計原則：3 低原則
-
-1. **低壓力**：匿名預熱，不必立即現身。
-2. **低門檻**：不需特定技能，只要「在場」即可。
-3. **低頻率**：不強制維繫關係，享受當下的連結。
-
----
-
-# 17. 應用程式介面：首頁探索
-
-[Image 4: Mobile UI - Activity Discovery Screen]
-
-- **介面設計**：清爽、通透的毛玻璃樣式。
-- **亮點**：分類清晰，強調「活動氛圍」標籤。
-
----
-
-# 18. 子萱的疑慮與介面回應
-
-當子萱點開活動列表，她會感到焦慮：「這真的有比學校社團好嗎？」
-
-- **解法**：提供詳細的「主持人氛圍描述」。
-- **預覽**：顯示目前的參與者特質（如：80% 為內向者）。
-
----
-
-# 19. 活動詳情：透明化社交預期
-
-[Image 5: Mobile UI - Activity Details with Vibe Description]
-
-- **詳細介紹**：主持人會標註「本活動適合開朗朋友」或「適合靜態慢熟者」。
-- **決策權**：子萱不需要賭博，她可以選擇最適合自己的舒適圈。
+<!--
+為了具象化我們的解決方案，我們編寫了一個設計情境。故事主角就是子萱。她從一開始在學校感到孤單，到偶然發現我們的平台。平台上「用社交強度篩選」的功能吸引了她，讓她有勇氣報名一個「夕陽散步」的低壓力活動。在活動中，因為有「拍照」這個共同任務當作緩衝，她很自然地跟其他人開始互動，最終成功建立了新的連結。這個故事版幫助我們釐清了產品的核心流程。
+-->
 
 ---
 
-# 20. 關鍵功能：過濾器篩選
+# 核心設計：心理舒適度優先
+# Core Design: Prioritizing Psychological Comfort
 
-[Image 6: Mobile UI - Filter Screen with Range Sliders]
+<div class="grid grid-cols-2 gap-8 items-center">
+  <div class="text-left">
+    <h3 class="font-bold text-2xl mb-4">社交強度過濾器</h3>
+    <h3 class="font-bold text-2xl mb-4">Social Intensity Filter</h3>
+    <p class="text-white/80 mb-4">這是我們設計的核心。使用者不是先選「活動內容」，而是先選「想要的社交方式」。</p>
+    <p class="text-white/80 mb-4">This is the core of our design. Users choose their desired "mode of socializing" before selecting the "activity content."</p>
+    <ul class="space-y-2">
+      <li><span class="font-bold text-teal-300">等級1:</span> 只需要點頭微笑 (Just need to nod and smile)</li>
+      <li><span class="font-bold text-teal-300">等級3:</span> 會聊幾句但不會強迫互動 (Will chat a bit, but no forced interaction)</li>
+      <li><span class="font-bold text-teal-300">等級5:</span> 適合想認識新朋友的人 (Suitable for those who want to meet new people)</li>
+    </ul>
+    <p class="text-white/80 mt-4">這給予了慢熟使用者「選擇的權利」，讓他們能待在自己的舒適圈內進行社交。</p>
+    <p class="text-white/80 mt-2">This empowers slow-to-warm-up users with the "right to choose," allowing them to socialize within their comfort zone.</p>
+  </div>
+  <!-- <div>
+    <img src="/data/website/activities_filter.png" class="rounded-2xl shadow-xl" alt="Activity Filter UI">
+  </div> -->
+</div>
 
-子萱發現系統提供「社交強度拉條」：
-- **人數上限**：可篩選小於 5 人的小團體。
-- **互動等級**：低、中、高強度選擇。
-
----
-
-# 21. 低社交活動：攝影新手攝影活動
-
-子萱最終選擇了「低社交攝影」：
-- **吸引點**：留言歡迎攝影新手。
-- **氛圍感**：主打靜態、觀察公園。
-
----
-
-# 22. 安心指標與預先互動
-
-[Image 7: Mobile UI - Pre-activity Chat & Safe Badge]
-
-- **破冰任務**：在線上先分享一張自己拍的照片。
-- **安心標記**：顯示「主持人已通過身分驗證」。
-
----
-
-# 23. 實體場域引導
-
-[Image 8: Offline Guidance - Meeting Point in Tainan Park]
-
-App 結合地圖導引，標註在公園內的精確集合點，減少子萱找路時的焦慮。
+<!--
+我們設計的核心，就是這個「社交強度過濾器」。傳統的活動平台，你只能選「爬山」或「看電影」。但在我們的平台上，你可以先決定你今天想要的「社交方式」。例如，你可以選擇等級一，「只需要點頭微笑」的活動，或者等級三，「會聊幾句但不會強迫互動」的活動。這個設計翻轉了傳統的邏輯，把「心理舒適度」放在第一位，真正賦予了像子萱這樣的慢熟使用者「選擇的權利」。
+-->
 
 ---
 
-# 24. 情境模擬：公園現場
+# 建立信任感與安全感
+# Building Trust and Safety
 
-[Image 9: Scenario Illustration - Zi-Xuan arriving at the Park]
+<div class="grid grid-cols-2 gap-8 text-left">
+  <div>
+    <h3 class="font-bold text-xl mb-2">豐富的個人檔案 (Rich Profiles)</h3>
+    <p class="text-sm text-white/80 mb-4">我們設計了超越基本資料的個人檔案，包含「個性風格滑桿」和「可以問我」標籤，幫助使用者找到同頻率的人，並降低初次見面的不確定性。</p>
+    <p class="text-sm text-white/80 mb-4">We designed rich profiles that go beyond basic information, including "personality sliders" and "ask me about" tags, to help users find like-minded people and reduce the uncertainty of first meetings.</p>
+    <!-- <img src="/data/website/profile_sliders.png" class="rounded-xl shadow-lg" alt="Profile Sliders"> -->
+  </div>
+  <div>
+    <h3 class="font-bold text-xl mb-2">活動驗證與安全指南 (Verification & Safety)</h3>
+    <p class="text-sm text-white/80 mb-4">為了確保社群品質，我們設計了活動審核流程。同時，在App內提供「公園安全地圖」和「如何禮貌地提早離開」的教戰守則，大幅降低參與者的心理壓力。</p>
+    <p class="text-sm text-white/80 mb-4">To ensure community quality, we designed an activity review process. The app also includes a "park safety map" and a guide on "how to politely leave early," significantly reducing participants' psychological stress.</p>
+    <!-- <img src="/data/website/verification_stepper.png" class="rounded-xl shadow-lg" alt="Verification Stepper"> -->
+  </div>
+</div>
 
-子萱到達現場，手持相機作為媒介，這讓她有了「合理的掩護」，不必為了交談而交談。
+<!--
+除了核心功能，我們也致力於建立社群的信任感。在個人檔案頁，我們設計了「個性風格滑桿」，讓使用者可以表達自己是偏向「獨處充電」還是「互動充電」，是「慢節奏」還是「快節奏」。這能幫助大家在見面之前，就找到頻率相似的人。同時，我們也有活動的審核機制，並在App內提供安全指南，例如教你「如何禮貌地提早離開」，這些設計都是為了最大化使用者的安全感。
+-->
 
 ---
 
-# 25. 互動的發生：從工作到連結
+# 原型驗證與優化
+# Prototype Verification & Iteration
 
-- **非語言連結**：共同拍攝夕陽。
-- **自然對話**：「你也用這台相機嗎？」
-- **結果**：成功建立無壓力的初次接觸。
+<div class="text-left">
+  <p>我們透過角色扮演的方式，讓受訪者化身為「楊子萱」來對我們的設計進行驗證。得到了許多寶貴的回饋：</p>
+  <p class="text-white/80">We used role-playing to have interviewees embody "Yang Zixuan" and validate our design. We received valuable feedback:</p>
+  <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
+    <div class="backdrop-blur-sm bg-white/5 p-4 rounded-lg border border-white/10">
+      <p class="text-amber-300 font-bold mb-2">關於天氣 (On Weather):</p>
+      <p class="italic">「如果沒有冷氣，我真的不會參加... 但如果是傍晚，天氣比較涼，我可能會考慮。」</p>
+      <p class="italic text-white/70 mt-1">"If there's no AC, I really wouldn't go... but if it's in the evening when it's cooler, I might consider it."</p>
+      <p class="text-green-400 mt-2">➡️ <span class="font-bold">驗證：</span> 平台上的熱門活動多在黃昏，符合使用者需求。</p>
+      <p class="text-green-400 text-xs">➡️ <span class="font-bold">Validation:</span> Popular activities on the platform are mostly at dusk, meeting user needs.</p>
+    </div>
+    <div class="backdrop-blur-sm bg-white/5 p-4 rounded-lg border border-white/10">
+      <p class="text-sky-300 font-bold mb-2">關於發起活動 (On Hosting):</p>
+      <p class="italic">「一開始我應該不會主動發起... 但如果平台有『有人加入才成立』的功能，我會願意試試看。」</p>
+      <p class="italic text-white/70 mt-1">"I probably wouldn't host at first... but if the platform had a feature where 'it only happens if people join,' I'd be willing to try."</p>
+      <p class="text-green-400 mt-2">➡️ <span class="font-bold">優化方向：</span> 在 2.0 版本加入「最低成團人數」的設定。</p>
+      <p class="text-green-400 text-xs">➡️ <span class="font-bold">Improvement:</span> Add a "minimum participants" setting in version 2.0.</p>
+    </div>
+  </div>
+</div>
+
+<!--
+設計完成後，我們進行了原型驗證。我們邀請受訪者扮演楊子萱，來測試我們的想法。結果非常成功。例如，當我們問到天氣問題，她們的回答跟我們的假設完全一樣，證明了我們將熱門活動設定在黃昏是正確的。同時，我們也得到寶貴的優化建議，例如在發起活動時，增加「最低成團人數」的選項，這也成為我們下一版要改進的目標。
+-->
 
 ---
 layout: section
 ---
 
-# PART IV: VALUE & CONCLUSION
-### 專案價值與反思
+# PART III
+## 專案價值與結論
+## Value & Conclusion
+
+<!--
+最後，來到我們的結論部分。我們將總結這個專案的價值，以及我們從中學到的事情。
+-->
 
 ---
 
-# 26. 解決方案總結：三層保障
+# 專案價值
+# Project Value
 
-1. **數位緩衝層**：篩選與預覽活動。
-2. **物理場景層**：公園的開放中介性。
-3. **心理安全層**：強調任務導向的互動。
+<div class="grid grid-cols-3 gap-8 text-left">
+  <div>
+    <div class="i-carbon-user-favorite w-12 h-12 text-green-400 mb-2"></div>
+    <h3 class="font-bold text-xl mb-2">對使用者<br>For the User</h3>
+    <p class="text-sm text-white/80">提供一個「社交新手村」。在這裡，犯錯是被允許的，沉默是沒關係的。它賦予了使用者在公共空間中「合法」獨處或進行輕社交的權利。</p>
+    <p class="text-sm text-white/80 mt-2">Provides a "social beginner's village" where mistakes are allowed and silence is okay. It grants users the right to be alone or engage in light social activities in a public space.</p>
+  </div>
+  <div>
+    <div class="i-carbon-park w-12 h-12 text-teal-400 mb-2"></div>
+    <h3 class="font-bold text-xl mb-2">對公園<br>For the Park</h3>
+    <p class="text-sm text-white/80">讓被忽視的青少年族群重新與公園產生連結。公園不再只是長輩的運動場或小孩的遊樂區，它也可以是年輕人建立歸屬感的第三空間。</p>
+    <p class="text-sm text-white/80 mt-2">Re-engages the overlooked youth demographic with the park. The park is no longer just for the elderly or children but becomes a third space for young people to build a sense of belonging.</p>
+  </div>
+  <div>
+    <div class="i-carbon-connect w-12 h-12 text-sky-400 mb-2"></div>
+    <h3 class="font-bold text-xl mb-2">對社會<br>For Society</h3>
+    <p class="text-sm text-white/80">提出一個緩解現代人孤獨感的可能解方。它證明了，有時候我們需要的不是更多的連結，而是「更舒適的連結」。</p>
+    <p class="text-sm text-white/80 mt-2">Offers a potential solution to modern loneliness. It proves that sometimes what we need is not more connections, but "more comfortable connections."</p>
+  </div>
+</div>
 
----
-
-# 27. 專案價值：重新連結公共空間
-
-- **對子萱**：找到社交新手村。
-- **對公園**：讓被忽視的青少年族群重新定義空間的使用方式。
-- **對社會**：緩解孤獨感，建立輕量的社會連結。
-
----
-
-# 28. 數據驗證與反思 (Based on U6/U7)
-
-我們回過頭看當初的 U6 (老人侵略性詢問)：
-- **設計回應**：若子萱當時正在參加平台的「讀書團」，她可以更有自信地回應：「我在參加活動」，這賦予了她在公共空間的行為合法性。
-
----
-
-# 29. 未來展望
-
-- **場景擴散**：不僅是公園，圖書館、通勤站點也能導入此模式。
-- **AI 輔助**：透過 AI 模擬 Persona 對活動方案的壓力測試。
+<!--
+總結來說，這個專案的價值體現在三個層面。對使用者而言，它是一個可以放心犯錯的「社交新手村」。對公園而言，它重新活化了被忽略的青少年族群。而對整個社會來說，它提供了一個緩解孤獨感的新模式——證明了「更舒適的連結」遠比「更多的連結」來得重要。
+-->
 
 ---
 layout: center
@@ -393,8 +379,13 @@ class: text-center
 ---
 
 # <span class="bg-gradient-to-r from-blue-300 to-emerald-300 bg-clip-text text-transparent font-bold text-5xl italic tracking-tighter">認識朋友，可以是一種舒適的選擇。</span>
+# <span class="block mt-4 text-white/90 text-4xl font-light tracking-wider">Making friends can be a comfortable choice.</span>
 
-<p class="mt-8 text-white/40 font-mono text-xs tracking-[0.4em] uppercase font-light underline decoration-white/20">Thank you for your attention</p>
+<p class="mt-20 text-white/40 font-mono text-xs tracking-[0.4em] uppercase font-light">Thank you</p>
+
+<!--
+我們相信，透過好的設計，認識朋友，可以是一種舒適的選擇。這就是我們今天的報告。謝謝大家。
+-->
 
 ---
 layout: default
@@ -404,5 +395,10 @@ layout: default
 
 <div class="h-full flex flex-col justify-center items-center opacity-30 italic">
   <p class="text-4xl text-white font-light">討論與反饋</p>
+  <p class="text-4xl text-white font-light mt-2">Discussions & Feedback</p>
   <div class="mt-8 w-16 h-0.5 bg-white rounded-full"></div>
 </div>
+
+<!--
+謝謝大家，接下來是問答時間。
+-->
