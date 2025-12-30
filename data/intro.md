@@ -3,4 +3,4 @@ Centered around Tainan park, the platform allows teens to discover or host small
 
 All the data about the website is located in the `website` directory. There, you can find `App.tsx` and other `pages` files.
 
-The syllabus for this course can be found in the `data/syllabus.md` file, it explains the design process. The presentation should follow the syllabus.
+The presentation guide can be found in the `data/presentation_guide.md` file, it explains the design process. The presentation should follow the syllabus, explained in the same file.

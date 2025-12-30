@@ -15,7 +15,7 @@ Note that the process is ONLY about finding the problem, not about the solution.
 
 * **場域研究與訪談**：
 * 進行觀察脈絡研究。
-* 執行使用者訪談，獲取第一手資料。 -> `field_study.md`, `user_behavior_dimension_analysis_summary.md`
+* 執行使用者訪談，獲取第一手資料。 -> `field_study.md`, `user_behavior_dimension_analysis.ipynb`, `user_behavior_dimension_analysis_summary.md`
 
 
 
