@@ -21,14 +21,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 1. Install the specific pnpm version you use locally
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8.15.4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+          # Optional: This enables automatic caching for faster builds
+          cache: 'pnpm'
 
       - name: Setup @antfu/ni
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
+        # nci will now use the pnpm 8.15.4 we just installed
         run: nci
 
       - name: Build
