@@ -633,13 +633,13 @@ dbscan_labels = dbscan.fit_predict(X_scaled)
 
 ---
 
-## 利害關係人地圖 (Stakeholder Map)
+## 利害關係人地圖
 
 <div class="text-left text-sm">
   <p>我們繪製了一個以楊子萱為核心的網狀地圖，分析影響她行為的各種力量。</p>
 </div>
 
-<div class="mt-4 scale-90 origin-top">
+<div class="mt-10 scale-100 origin-top">
 
 ```mermaid
 graph TD
@@ -685,17 +685,6 @@ Police -.-> |例行巡邏觀看| Main
 style Main fill:#ff9999,color:#222,stroke:#333,stroke-width:4px
 ```
 
-</div>
-
-<div class="text-left text-xs mt-4">
-  <ul class="space-y-3 list-disc list-outside ml-4 marker:text-blue-400 text-white/80">
-    <li class="leading-relaxed">
-      <b>數位島嶼</b>：<b>演算法（TechCorp）</b> 與 <b>短影音（Shorts）</b> 是她躲避現實社交的盾牌，但也是造成她分心與焦慮的間接推手。
-    </li>
-    <li class="leading-relaxed">
-      <b>跨世代衝突</b>：<b>玩牌長者（Elders）</b> 與子萱之間的關係是「空間重疊但心理排斥」。長輩的「主動詢問（如：今天沒上課？）」對她而言是微侵略。
-    </li>
-  </ul>
 </div>
 
 <!--
@@ -1227,8 +1216,8 @@ AI 的建議讓我們意識到，社交安全不只是「保護」，更是「�
   <h4 class="font-bold mb-2 text-teal-300 w-full text-left text-xs">1. 朋友互動與筆記</h4>
   <img src="/images/website/Screenshot_20260101_220653.jpg" class="h-48 rounded shadow-lg border border-white/10 object-contain mb-2">
   <div class="text-white/80 leading-tight w-full">
-    <p class="text-[10px] text-teal-200 ">「我怕下次見面沒話聊。」</p>
-    <p class="text-[10px] text-white/60 mt-1">👉 **實作：** 私人筆記記錄同好細節，並整合即時訊息與活動邀請功能。</p>
+    <p class="text-sm text-teal-200 ">「我怕下次見面沒話聊。」</p>
+    <p class="text-sm text-white/60 mt-1"><carbon-arrow-right />私人筆記記錄同好細節，並整合即時訊息與活動邀請功能。</p>
   </div>
 </div>
 
@@ -1236,17 +1225,17 @@ AI 的建議讓我們意識到，社交安全不只是「保護」，更是「�
   <h4 class="font-bold mb-2 text-red-300 w-full text-left text-xs">2. 安全地圖與脫身指南</h4>
   <img src="/images/website/Screenshot_20260101_220657.jpg" class="h-48 rounded shadow-lg border border-white/10 object-contain mb-2">
   <div class="text-white/80 leading-tight w-full">
-    <p class="text-[10px] text-red-200 ">「怕被困在尷尬場合。」</p>
-    <p class="text-[10px] text-white/60 mt-1">👉 **實作：** 公園安全照明地圖與禮貌脫身話術，確保物理與心理的雙重安全。</p>
+    <p class="text-sm text-red-200 ">「怕被困在尷尬場合。」</p>
+    <p class="text-sm text-white/60 mt-1"><carbon-arrow-right />公園安全照明地圖與禮貌脫身話術，確保物理與心理的雙重安全。</p>
   </div>
 </div>
 
 <div v-click class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-lg flex flex-col items-center">
-  <h4 class="font-bold mb-2 text-blue-300 w-full text-left text-xs">3. 多維度回饋系統</h4>
+  <h4 class="font-bold mb-2 text-blue-300 w-full text-left text-xs">3. 通知系統</h4>
   <img src="/images/website/Screenshot_20260101_220643.jpg" class="h-48 rounded shadow-lg border border-white/10 object-contain mb-2">
   <div class="text-white/80 leading-tight w-full">
-    <p class="text-[10px] text-blue-200 ">「我表現得好嗎？」</p>
-    <p class="text-[10px] text-white/60 mt-1">👉 **實作：** 引入同儕肯定系統，在通知中傳達「你是安靜但讓人安心的夥伴」。</p>
+    <p class="text-sm text-blue-200 ">「我真的不會忘記參加嗎？」</p>
+    <p class="text-sm text-white/60 mt-1"><carbon-arrow-right />加入通知系統，在活動開始前得到通知。</p>
   </div>
 </div>
 
