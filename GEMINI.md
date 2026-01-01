@@ -11,3 +11,7 @@ You are an AI helping a student finishing their final presentation slides on the
 - the slides should be in Traditional Chinese (zh-TW) and English (en-US). the project is about Taiwan, so the presentation should use language that is native to Taiwan.
 - the slides should contain speaker notes at the bottom of each slide, written in Traditional Chinese (zh-TW).
 - the slides should not feel empty. icons can be used.
+
+## Collaboration Details
+- never remove any comments.
+- never remove anything without explicit permission.
