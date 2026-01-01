@@ -18,6 +18,11 @@ dependencies:
     specifier: ^3.5.26
     version: 3.5.26(typescript@5.9.3)
 
+devDependencies:
+  '@iconify-json/mdi':
+    specifier: ^1.2.3
+    version: 1.2.3
+
 packages:
 
   /@antfu/install-pkg@1.1.0:
@@ -615,6 +620,12 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/mdi@1.2.3:
+    resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/ph@1.2.2:
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
     dependencies:
@@ -629,7 +640,6 @@ packages:
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: false
 
   /@iconify/utils@3.1.0:
     resolution: {integrity: sha512-Zlzem1ZXhI1iHeeERabLNzBHdOa4VhQbqAcOQaMKuTuyZCpwKbC2R4Dd0Zo3g9EAc+Y4fiarO8HIHRAth7+skw==}
