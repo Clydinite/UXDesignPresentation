@@ -11,13 +11,7 @@ speaker: true
 ---
 
 # <span class="text-white drop-shadow-xl text-6xl font-bold">台南公園輕社交平台</span>
-<p class="text-white/80 tracking-widest mt-4 block font-light text-2xl">從行為觀察到「反思型社交」的設計實踐</p>
-
-<div class="pt-12">
-  <div class="inline-block backdrop-blur-md bg-white/10 border border-white/20 px-8 py-4 rounded-2xl shadow-2xl">
-    <p class="font-mono text-sm">使用者經驗設計個案研究</p>
-  </div>
-</div>
+<p class="text-white/80 tracking-widest mt-4 block font-light text-2xl">使用者經驗設計個案研究</p>
 
 <!--
 各位評審老師、同學大家好，我們是第Ｘ組。今天要與大家分享的主題是「台南公園輕社交平台」。這是一個專為害羞、慢熟的青少年設計的數位解方，旨在幫助他們在公共空間中，找到屬於自己的舒適社交節奏。
@@ -25,7 +19,41 @@ speaker: true
 
 ---
 
-<Toc />
+# 報告大綱
+
+<div class="grid grid-cols-2 gap-8 mt-20">
+  <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-6 group hover:bg-white/10 transition-colors">
+    <div class="text-5xl font-black text-white/10 italic group-hover:text-teal-500/20 transition-colors">01</div>
+    <div class="text-left">
+      <h3 class="font-bold text-2xl text-teal-300">專案介紹</h3>
+      <p class="text-sm text-white/40 mt-1 uppercase tracking-widest font-mono">Introduction</p>
+    </div>
+  </div>
+  
+  <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-6 group hover:bg-white/10 transition-colors">
+    <div class="text-5xl font-black text-white/10 italic group-hover:text-sky-500/20 transition-colors">02</div>
+    <div class="text-left">
+      <h3 class="font-bold text-2xl text-sky-300">設計方法</h3>
+      <p class="text-sm text-white/40 mt-1 uppercase tracking-widest font-mono">Design Methods</p>
+    </div>
+  </div>
+
+  <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-6 group hover:bg-white/10 transition-colors">
+    <div class="text-5xl font-black text-white/10 italic group-hover:text-orange-500/20 transition-colors">03</div>
+    <div class="text-left">
+      <h3 class="font-bold text-2xl text-orange-300">UX 設計解答</h3>
+      <p class="text-sm text-white/40 mt-1 uppercase tracking-widest font-mono">Solution</p>
+    </div>
+  </div>
+
+  <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-6 group hover:bg-white/10 transition-colors">
+    <div class="text-5xl font-black text-white/10 italic group-hover:text-pink-500/20 transition-colors">04</div>
+    <div class="text-left">
+      <h3 class="font-bold text-2xl text-pink-300">結論</h3>
+      <p class="text-sm text-white/40 mt-1 uppercase tracking-widest font-mono">Conclusion</p>
+    </div>
+  </div>
+</div>
 
 <!--
 這是我們今天的報告大綱。我們會先從專案的核心目標與價值開始，解釋為什麼我們選擇「研究先行」的策略。接著進入設計方法，展示我們如何透過田野觀察與數據分析來定義問題。第三部分是設計解答，我們會透過使用者故事與實際介面，展示我們的解決方案。最後，我們會分享經過驗證後的設計迭代與專案價值。
@@ -46,25 +74,76 @@ layout: section
 
 ## 候選場域初步掃描
 
-在進入深度研究前，我們針對台南三個具備不同社會特性的場域進行了掃描。
+在進入深度研究前，我們針對台南三個具備不同社會特性的場域進行了初步掃描。
 
-<div class="flex flex-row gap-4"> 
-  <div v-click class="p-4 bg-white/5 rounded-lg border border-white/10 mb-4">
-    <h3 class="font-bold text-orange-300 mb-2">A. 大東夜市</h3>
-    <p class="text-xs text-white/80"><b>特質</b>：庶民生活的煙火氣，高度隨性與混亂。</p>
-    <p class="text-xs text-white/60 mt-2"><b>潛力</b>：解決「擠」與「等」的效率問題。</p>
+<div class="grid grid-cols-3 gap-6 mt-8"> 
+  <div v-click class="relative flex flex-col p-5 bg-white/5 rounded-2xl border border-white/10 h-full">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="p-2 rounded-lg bg-orange-500/20 text-orange-400">
+        <div class="mdi-food-marker text-xl"></div>
+      </div>
+      <h3 class="font-bold text-xl text-orange-300">大東夜市</h3>
+    </div>
+    <div class="space-y-3 flex-grow">
+      <div>
+        <p class="text-sm text-white/80 !my-2">特質：庶民生活的煙火氣，高度隨性與混亂。</p>
+      </div>
+      <div>
+        <p class="text-sm text-orange-200/60 !my-2">潛力：解決「擠」與「等」的效率問題。</p>
+      </div>
+    </div>
+    <div class="mt-4 relative group">
+      <img src="/images/night_market.png" class="rounded-xl w-full h-32 object-cover border border-white/10">
+      <div class="group-hover:opacity-100 transition-opacity absolute bottom-1 right-2 text-[8px] text-white/40 bg-black/60 px-1 rounded">
+        LH Wong / CC BY-SA 2.0
+      </div>
+    </div>
   </div>
 
-  <div v-click class="p-4 bg-white/5 rounded-lg border border-white/10 mb-4">
-    <h3 class="font-bold text-sky-300 mb-2">B. 銀同社區</h3>
-    <p class="text-xs text-white/80"><b>特質</b>：老街記憶與歷史積澱，充滿生活感。</p>
-    <p class="text-xs text-white/60 mt-2"><b>潛力</b>：聲音敘事與歷史傳承。</p>
+  <div v-click class="relative flex flex-col p-5 bg-white/5 rounded-2xl border border-white/10 h-full">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="p-2 rounded-lg bg-sky-500/20 text-sky-400">
+        <div class="mdi-home-city text-xl"></div>
+      </div>
+      <h3 class="font-bold text-xl text-sky-300">銀同社區</h3>
+    </div>   
+    <div class="space-y-3 flex-grow">
+      <div>
+        <p class="text-sm text-white/80 !my-2">特質：老街記憶與歷史積澱，充滿生活感。</p>
+      </div>
+      <div>
+        <p class="text-sm text-sky-200/60 !my-2">潛力：聲音敘事與歷史傳承。</p>
+      </div>
+    </div>
+    <div class="mt-4 relative group">
+      <img src="/images/ying_tong_community.png" class="rounded-xl w-full h-32 object-cover border border-white/10">
+      <div class="group-hover:opacity-100 transition-opacity absolute bottom-1 right-2 text-[8px] text-white/40 bg-black/60 px-1 rounded">
+        udn.com
+      </div>
+    </div>
   </div>
 
-  <div v-click class="p-4 bg-white/5 rounded-lg border border-white/10 mb-4">
-    <h3 v-mark.circle.red="4" class="font-bold text-teal-300 mb-2">C. 台南公園</h3>
-    <p class="text-xs text-white/80"><b>特質</b>：完全去目的化的開放空間，無消費門檻。</p>
-    <p class="text-xs text-white/60 mt-2"><b>潛力</b>：解決「行為異化」與「低壓力社交」。</p>
+  <div v-click class="relative flex flex-col p-5 bg-white/5 rounded-2xl border border-white/10 h-full">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="p-2 rounded-lg bg-teal-500/20 text-teal-400">
+        <div class="mdi-tree text-xl"></div>
+      </div>
+      <h3 class="font-bold text-xl text-teal-300">台南公園</h3>
+    </div>
+    <div class="space-y-3 flex-grow">
+      <div>
+        <p class="text-sm text-white/80 !my-2">特質：完全去目的化的開放空間，無消費門檻。</p>
+      </div>
+      <div>
+        <p class="text-sm text-teal-200/80 !my-2">潛力：解決「行為異化」與「低壓力社交」。</p>
+      </div>
+    </div>
+    <div class="mt-4 relative group">
+      <img src="/images/tainan_park.png" class="rounded-xl w-full h-32 object-cover border border-white/10">
+      <div class="group-hover:opacity-100 transition-opacity absolute bottom-1 right-2 text-[8px] text-white/40 bg-black/60 px-1 rounded">
+        338km / CC BY 3.0
+      </div>
+    </div>
   </div>
 </div>
 
@@ -76,19 +155,46 @@ layout: section
 
 ## 決策核心：為何選擇台南公園？
 
-經過評估，我們認為台南公園最具備 UX 研究價值，原因有二：
+<div class="mt-4 mb-10 text-center">
+  <p v-click class="text-xl text-gray-400">
+    經過場域掃描，我們認為台南公園最具備 UX 研究價值的是其 <span class="text-teal-400 font-bold border-b border-teal-400/50">「去目的化」</span> 的特質。
+  </p>
+</div>
 
-<div class="grid grid-cols-2 gap-8 text-left mt-8">
-  <div v-click class="p-5 border-l-4 border-teal-400 bg-white/5">
-    <h3 class="font-bold text-xl mb-2">1. 「去角色化」帶來的行為多樣性</h3>
-    <p class="text-white/80 text-sm leading-relaxed">夜市的人是顧客，社區的人是鄰居。唯有在公園，人們可以「只是在那裡」。這種角色的缺失，讓我們能觀察到最純粹的使用者心理狀態（如焦慮、放鬆、孤獨）。</p>
+<div class="flex flex-row gap-6">
+  
+  <div v-click class="relative p-8 rounded-3xl bg-gradient-to-b from-red-500/10 to-transparent border border-red-500/20 shadow-2xl">
+    <div class="mt-4 space-y-4 text-center">
+      <h3 class="text-2xl font-bold text-red-300">強烈的角色預設</h3>
+      <div class="h-px w-12 bg-white/10 mx-auto"></div>
+      <p class="text-white/60 leading-relaxed text-sm">
+        夜市的人是「顧客」，社區的人是「鄰居」。<br>
+        場域的功能性限制了行為的邊界。
+      </p>
+      <div class="bg-black/20 p-4 rounded-2xl border border-white/5 text-left">
+        <p class="text-xs text-white/40 ">
+          <span class="font-bold">局限：</span> 行為模式高度可預測（消費或社交），難以觀察到「社交焦慮」或「孤獨感」等深層心理波動。
+        </p>
+      </div>
+    </div>
   </div>
 
-  <!-- TODO: this doesn't make sense. we only do the field study after selection of the candidate sites -->
-  <div v-after class="p-5 border-l-4 border-teal-400 bg-white/5">
-    <h3 class="font-bold text-xl mb-2">2. 挑戰「數位孤島」現象</h3>
-    <p class="text-white/80 text-sm leading-relaxed">我們觀察到公園中存在嚴重的「數位孤島」——人們身處開放空間，卻退縮回手機的個人世界。這提供了一個巨大的空白，讓我們去設計一個能連結數位與實體的系統。</p>
+  <div v-click class="relative p-8 rounded-3xl bg-gradient-to-b from-teal-500/10 to-transparent border border-teal-500/20 shadow-2xl">
+    <div class="mt-4 space-y-4 text-center">
+      <h3 class="text-2xl font-bold text-teal-300">「去角色化」行為</h3>
+      <div class="h-px w-12 bg-teal-500/30 mx-auto"></div>
+      <p class="text-white/80 leading-relaxed text-sm">
+        唯有在公園，人們可以「只是在那裡」。<br>
+        無消費門檻、無固定任務、無角色負擔。
+      </p>
+      <div class="bg-black/30 p-4 rounded-2xl border border-teal-500/10 text-left">
+        <p class="text-xs text-teal-200/80 ">
+          <span class="font-bold">核心研究價值：</span> 這種角色的缺失，讓我們能觀察到最純粹的使用者心理狀態，進而定義出「低壓力社交」的設計切點。
+        </p>
+      </div>
+    </div>
   </div>
+
 </div>
 
 <!--
@@ -97,41 +203,47 @@ layout: section
 
 ---
 
-## 場域影像紀錄
-
-<div class="grid grid-cols-3 gap-4 mt-8">
-  <div class="aspect-video bg-gray-800/50 rounded-lg flex items-center justify-center border border-white/10">
-    <!-- <img src="/data/images/night_market.jpg" class="object-cover w-full h-full rounded-lg" /> -->
-    <p class="text-white/30 text-sm">大東夜市 (Placeholder)</p>
-  </div>
-  <div class="aspect-video bg-gray-800/50 rounded-lg flex items-center justify-center border border-white/10">
-    <!-- <img src="/data/images/community.jpg" class="object-cover w-full h-full rounded-lg" /> -->
-    <p class="text-white/30 text-sm">銀同社區 (Placeholder)</p>
-  </div>
-  <div class="aspect-video bg-teal-900/30 rounded-lg flex items-center justify-center border border-teal-500/30">
-    <!-- <img src="/data/images/tainan_park.jpg" class="object-cover w-full h-full rounded-lg" /> -->
-    <p class="text-teal-300/50 text-sm">台南公園 (Placeholder)</p>
-  </div>
-</div>
-
-<!--
-這裡是我們實地走訪三個場域的影像紀錄。（待補圖片）
--->
-
----
-
 ## 專案目標與價值主張
 
-<div class="grid grid-cols-2 gap-8 text-left items-center pt-4">
-  <div class="backdrop-blur-sm bg-white/5 p-4 rounded-lg border border-white/10">
-    <h3 class="font-bold text-2xl mb-4">專案目標</h3>
-    <p class="text-white/80">本專案旨在探索如何透過一個數位平台，幫助青少年在一個感覺<b>低壓力、舒適、且忠於自我個性</b>的環境中進行社交。</p>
-    <p class="text-white/80 mt-4">我們選擇以<b>台南公園</b>為中心，設計一個讓青少年可以發起或參與小型、「氛圍導向」活動的平台。</p>
+<div class="mt-12 grid grid-cols-2 gap-10 items-stretch">
+  <div class="relative p-8 rounded-3xl bg-orange-500/5 border border-orange-500/20 shadow-2xl transition-all duration-500 hover:bg-orange-500/10">
+    <div class="absolute -top-6 left-10">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center shadow-lg shadow-orange-500/30">
+        <mdi-bullseye-arrow class="text-3xl text-white" />
+      </div>
+    </div>
+    <div class="mt-6 space-y-6">
+      <h3 class="text-3xl font-bold text-orange-300 tracking-tight">專案目標</h3>
+      <div class="h-px w-16 bg-orange-500/30"></div>
+      <p class="text-lg text-white/90 leading-relaxed">
+        探索如何透過數位平台，幫助青少年在一個感覺 <span class="text-orange-200 font-bold border-b-2 border-orange-500/40">低壓力、舒適、且忠於自我個性</span> 的環境中進行社交。
+      </p>
+      <div class="p-4 bg-black/40 rounded-2xl border border-orange-500/10">
+        <p class="text-sm text-orange-100/70 leading-relaxed">
+          以台南公園為核心場域，設計一個讓青少年可以發起或參與小型「氛圍導向」活動的實驗性平台。
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="backdrop-blur-sm bg-white/5 p-4 rounded-lg border border-white/10">
-    <h3 class="font-bold text-2xl mb-4">價值主張</h3>
-    <p class="text-white/80">與其推廣大型、吵雜或高度社交的活動，我們的設計更專注於：</p>
-    <p class="text-teal-300 font-bold mt-4 text-lg">「幫助害羞或慢熟的使用者，在他們自己的步調下，安全地邁出社交的第一步。」</p>
+
+  <div class="relative p-8 rounded-3xl bg-blue-500/5 border border-blue-500/20 shadow-2xl transition-all duration-500 hover:bg-blue-500/10">
+    <div class="absolute -top-6 left-10">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/30">
+        <mdi-shield-check class="text-3xl text-white" />
+      </div>
+    </div>
+    <div class="mt-6 space-y-6">
+      <h3 class="text-3xl font-bold text-blue-300 tracking-tight">價值主張</h3>
+      <div class="h-px w-16 bg-blue-500/30"></div>
+      <p class="text-lg text-white/80 leading-relaxed">
+          與其再推廣一個通用或大型、吵雜或高度社交的活動，我們的設計更專注於<span class="text-blue-200 font-bold border-b-2 border-blue-500/40">解決深層的社交焦慮</span>。
+      </p>
+      <div class="p-4 bg-black/40 rounded-2xl border border-blue-500/10">
+        <p class="text-sm text-blue-100/70 leading-relaxed">
+          幫助害羞或慢熟的使用者，在他們自己的步調下，安全地邁出社交的第一步。
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -154,19 +266,45 @@ layout: section
 
 ## 為什麼不直接開發 App？
 
-<p v-click>我們拒絕犯下「先射箭再畫靶」(The Texas Sharpshooter Fallacy) 的錯誤。</p>
+<div class="mt-4 mb-8 text-center">
+  <p v-click class="text-xl text-gray-400 !my-10">
+    我們拒絕犯下 <span class="text-red-400 font-bold border-b border-red-400/50">「先射箭再畫靶」</span> 的錯誤。
+  </p>
+</div>
 
-<div class="grid grid-cols-2 gap-8 text-left mt-8">
-  <div v-click class="p-4 border-l-4 border-red-400 bg-white/5">
-    <h3 class="font-bold text-xl mb-2 text-red-300">先射箭再畫靶</h3>
-    <p class="text-white/80 mb-2">許多專案往往先決定了「要做一個 App」，然後才去尋找「可以用在哪裡」。</p>
-    <p class="text-white/60 text-sm">👉 這導致產品往往解決了表面的便利性（如：找不到活動），卻忽視了深層的心理門檻（如：不敢參加）。</p>
+<div class="flex flex-row gap-12">
+  <div v-after class="relative p-8 rounded-3xl bg-gradient-to-b from-red-500/10 to-transparent border border-red-500/20 shadow-2xl">
+    <div class="mt-4 space-y-4 text-center">
+      <h3 class="text-2xl font-bold text-red-300">先射箭再畫靶</h3>
+      <div class="h-px w-12 bg-red-500/30 mx-auto"></div>
+      <p class="text-white/80 leading-relaxed">
+        許多專案往往先決定了要做一個 App，<br>
+        然後才去尋找「可以用在哪裡」。
+      </p>
+      <div class="bg-black/30 p-4 rounded-2xl border border-red-500/10 text-left">
+        <p class="text-sm text-red-200/80 ">
+          <span class="font-bold">盲點：</span> 解決了表面的便利性（如：找不到活動），卻忽視了深層的心理門檻（如：不敢參加）。
+        </p>
+      </div>
+    </div>
   </div>
-  <div v-after class="p-4 border-l-4 border-teal-400 bg-white/5">
-    <h3 class="font-bold text-xl mb-2 text-teal-300">先觀察再設計</h3>
-    <p class="text-white/80 mb-2">我們選擇先走入場域，透過觀察使用者的真實行為，找出「潛在需求」。</p>
-    <p class="text-white/60 text-sm">👉 唯有透過田野調查，我們才能發現「數位孤島」現象，並定義出真正的設計機會點。</p>
+
+  <div v-click class="relative p-8 rounded-3xl bg-gradient-to-b from-teal-500/10 to-transparent border border-teal-500/20 shadow-2xl">
+    <div class="mt-4 space-y-4 text-center">
+      <h3 class="text-2xl font-bold text-teal-300">先觀察再設計</h3>
+      <div class="h-px w-12 bg-teal-500/30 mx-auto"></div>
+      <p class="text-white/80 leading-relaxed">
+        走入場域觀察真實行為，<br>
+        從「潛在需求」中定義問題。
+      </p>
+      <div class="bg-black/30 p-4 rounded-2xl border border-teal-500/10 text-left">
+        <p class="text-sm text-teal-200/80 ">
+          <span class="font-bold">契機：</span> 透過田野調查發現「數位孤島」，從而定義出真正具備社會溫度的設計機會點。
+        </p>
+      </div>
+    </div>
   </div>
+
 </div>
 
 <!--
@@ -178,7 +316,7 @@ layout: default
 class: 'p-8'
 ---
 
-# 田野觀察：12 組行為圖鑑 (Behavioral Atlas)
+# 田野觀察：12 組行為圖鑑
 
 我們捕捉了場域中 12 組使用者的「標誌性動作」，揭示他們在公共空間裡的真實狀態。
 
@@ -251,33 +389,64 @@ class: 'p-8'
 </div>
 
 ---
-layout: two-cols
----
 
-## 田野觀察 
-<!-- TODO: enhance this slide -->
+## 田野觀察：公園裡的真實狀態
 
-我們紀錄了 12 組使用者的行為。這些第一手資料揭示了使用者在公園中的真實狀態。
+我們紀錄了 12 組使用者的行為。這些第一手資料揭示了使用者在公園中的真實狀態，以及手機在公共空間中所扮演的角色。
 
-<br>
-
-::right::
-
-<div class="space-y-4 text-xs overflow-y-scroll">
-  <div v-click class="backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10 text-left">
-    <p class="font-bold text-yellow-300">(U7) 剛放學的南二中同學</p>
-    <p class="text-white/80">「和他的朋友們一邊過馬路一邊看手機... 的同學時不時會模仿手機上短片內容... 到公車站後自成一小群一起等公車。」</p>
-    <p class="text-white/50 mt-1">-> 身體在場，但社交焦點在手機內容。</p>
+<div class="mt-6 flex flex-row gap-6">
+  <div v-click class="group backdrop-blur-md bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300 flex flex-col">
+    <div class="flex justify-between items-start mb-4">
+      <div class="px-3 py-1 rounded bg-yellow-500/10 border border-yellow-500/20 text-xs font-mono text-yellow-400 font-bold">U7 南二中同學</div>
+      <div class="mdi-cellphone-link text-2xl text-yellow-500/40"></div>
+    </div>
+    <div class="flex-grow">
+      <p class="text-md text-white/80 leading-relaxed">
+        「和他的朋友們一邊過馬路一邊看手機... 的同學時不時會模仿手機上短片內容... 到公車站後自成一小群一起等公車。」
+      </p>
+    </div>
+    <div class="mt-6 pt-4 border-t border-white/10">
+      <p class="text-sm text-yellow-200/60 flex items-start gap-2">
+        <span class="mdi-arrow-right-bold mt-0.5"></span>
+        <span>身體在場，但社交焦點在手機內容。</span>
+      </p>
+    </div>
   </div>
-  <div v-click class="backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10 text-left">
-    <p class="font-bold text-teal-300 mb-1">(U8) 穿便服的大學生</p>
-    <p class="text-white/80">「自己一個人在人行道上行走，似乎很專注在自己的手機上... 的手機畫面似乎是遊戲... 開始在聊天軟體與遊戲畫面之間來回切換。」</p>
-    <p class="text-white/50 mt-1">-> 利用數位裝置建立個人結界。</p>
+
+  <div v-click class="group backdrop-blur-md bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-teal-500/50 transition-all duration-300 flex flex-col">
+    <div class="flex justify-between items-start mb-4">
+      <div class="px-3 py-1 rounded bg-teal-500/10 border border-teal-500/20 text-xs font-mono text-teal-400 font-bold">U8 大學生</div>
+      <div class="mdi-shield-account text-2xl text-teal-500/40"></div>
+    </div>
+    <div class="flex-grow">
+      <p class="text-md text-white/80 leading-relaxed">
+        「自己一個人在人行道上行走，似乎很專注在自己的手機上... 的手機畫面似乎是遊戲... 開始在聊天軟體與遊戲畫面之間來回切換。」
+      </p>
+    </div>
+    <div class="mt-6 pt-4 border-t border-white/10">
+      <p class="text-sm text-teal-200/60 flex items-start gap-2">
+        <span class="mdi-arrow-right-bold mt-0.5"></span>
+        <span>利用數位裝置建立個人結界，沒有與人交流。</span>
+      </p>
+    </div>
   </div>
-  <div v-click class="backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10 text-left">
-    <p class="font-bold text-red-300 mb-1">(U9) 在對向等公車的人</p>
-    <p class="text-white/80">「旁觀的人很多，似乎感到一些焦慮，每隔幾分鐘會一邊張望一邊東西望... 臉上明顯透露出不耐煩，並且手機上開啟大台南公車app。」</p>
-    <p class="text-white/50 mt-1">-> 在人群中感到焦慮，手機成為緩解工具。</p>
+
+  <div v-click class="group backdrop-blur-md bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-red-500/50 transition-all duration-300 flex flex-col">
+    <div class="flex justify-between items-start mb-4">
+      <div class="px-3 py-1 rounded bg-red-500/10 border border-red-500/20 text-xs font-mono text-red-400 font-bold">U9 通勤者</div>
+      <div class="mdi-account-search text-2xl text-red-500/40"></div>
+    </div>
+    <div class="flex-grow">
+      <p class="text-md text-white/80 leading-relaxed">
+        「旁觀的人很多，似乎感到一些焦慮，每隔幾分鐘會一邊張望一邊東西望... 臉上明顯透露出不耐煩，並且手機上開啟大台南公車app。」
+      </p>
+    </div>
+    <div class="mt-6 pt-4 border-t border-white/10">
+      <p class="text-sm text-red-200/60 flex items-start gap-2">
+        <span class="mdi-arrow-right-bold mt-0.5"></span>
+        <span>在人群中感到焦慮，手機成為緩解工具。</span>
+      </p>
+    </div>
   </div>
 </div>
 
@@ -291,7 +460,9 @@ layout: two-cols
 
 我們將 12 組使用者的行為量化到 9 個維度上。
 
-<img src="/images/behavioral_analysis_dimensions.png" class="mt-4 w-full rounded-lg" />
+<div class="flex justify-center align-center">
+<img src="/images/behavioral_analysis_dimensions.png" class="mt-4 w-[85%] rounded-lg" />
+</div>
 
 ---
 
@@ -406,8 +577,6 @@ dbscan_labels = dbscan.fit_predict(X_scaled)
     </div>
   </div>
 </v-clicks>
-
-<p v-click class="text-sm font-bold mt-6 text-left">💡 核心洞察：不同群體間存在著「社交真空地帶」，這是我們設計介入的機會點。</p>
 
 <!--
 分析結果顯示，大部分的使用者要嘛在移動（Group A），要嘛處於封閉社交狀態（Group B），要嘛是固定的長輩群體（Group D）。我們發現了一個巨大的「社交真空地帶」：缺乏一個讓這些不同群體之間，能夠以低壓力方式產生連結的機制。這就是我們設計的機會點。
@@ -646,220 +815,232 @@ layout: section
 <!--
 現在進入第三部分：UX 設計解答。在這個章節，我們會展示最終的 App 設計是如何回應前面定義出的種種問題，並透過一個完整的使用者故事與實際程式碼，帶大家體驗我們的解決方案。
 -->
-
 ---
 
-## 解決方案概覽：網站架構
+## 解決方案概覽：視覺與架構
 
-我們的解決方案是一個基於 React 的網頁應用程式 (Web App)，專為行動裝置優化。
+<div class="grid grid-cols-[300px_1fr] gap-12 mt-6 items-center h-full">
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-10 bg-teal-500/15 rounded-full blur-[80px]"></div>
+    <div class="relative group">
+      <div class="absolute -inset-1 bg-gradient-to-b from-white/20 to-transparent rounded-[2.5rem] blur opacity-50"></div>
+      <img src="/images/website/Screenshot_20251214_022316.jpg" class="relative h-[420px] w-[210px] rounded-[2rem] shadow-2xl border border-white/20 object-cover transform -rotate-1 group-hover:rotate-0 transition-transform duration-700 -mt-10" />
+    </div>
+  </div>
 
-<div class="overflow-auto">
-
-```tsx {all|4-10}
-// App.tsx: 應用程式主架構
-function Nav() {
-  const navItems = [
-    { path: "/", label: "首頁" },
-    { path: "/activities", label: "探索活動" }, // 核心功能：尋找適合的活動
-    { path: "/host", label: "發起活動" },       // 核心功能：成為主辦者
-    { path: "/my-activities", label: "我的活動" },
-    { path: "/friends", label: "我的朋友" },    // 社交資產累積
-    { path: "/safety", label: "安全與導航" },   // 安全感設計
-    { path: "/profile", label: "個人檔案" },    // 自我展現
-  ];
-  // ... (Rendering logic)
-}
-
-export default function App() {
-  return (
-    <Router>
-        <div className="bg-gray-950 text-white">
-          <Nav />
-          <Routes>
-            { /* 其他頁面內容 */ }
-          </Routes>
+  <div class="space-y-4 -mt-15">
+      <p class="text-gray-400 text-lg">基於 React 開發，以深色調與柔和動態背景建立心理安全感。</p>
+    <div class="grid grid-cols-1 gap-4">
+      <div class="flex items-center gap-5 p-2 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-teal-500/20 text-teal-400 shadow-lg shadow-teal-500/10"><carbon-settings-adjust class="text-2xl" /></div>
+        <div>
+          <h4 class="font-bold text-white text-lg">探索活動</h4>
+          <p class="text-sm text-gray-400 !my-1">獨創「社交強度」篩選器，精準對接心理舒適區</p>
         </div>
-    </Router>
-  );
-}
-```
-
+      </div>
+      <div class="flex items-center gap-5 p-2 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-orange-500/20 text-orange-400 shadow-lg shadow-orange-500/10"><carbon-pedestrian-child class="text-2xl" /></div>
+        <div>
+          <h4 class="font-bold text-white text-lg">發起活動</h4>
+          <p class="text-sm text-gray-400 !my-1">去中心化的主辦流程，讓每個人都能輕鬆發聲</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-5 p-2 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-purple-500/20 text-purple-400 shadow-lg shadow-purple-500/10"><carbon-face-activated class="text-2xl" /></div>
+        <div>
+          <h4 class="font-bold text-white text-lg">個人檔案</h4>
+          <p class="text-sm text-gray-400 !my-1">視覺化興趣標籤與慢熟標記，取代壓力文字敘述</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-5 p-2 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-blue-500/20 text-blue-400 shadow-lg shadow-blue-500/10"><carbon-map class="text-2xl" /></div>
+        <div>
+          <h4 class="font-bold text-white text-lg">安全與導航</h4>
+          <p class="text-sm text-gray-400 !my-1">提供集合地標實景引導，消除抵達現場的焦慮感</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!--
-這是我們網站的主程式架構。我們使用了 React Router 來管理頁面，並透過 Tailwind CSS 來打造一個深色模式、帶有柔和動態背景 (Blobs) 的視覺風格，目的是為了在第一眼就給使用者一種「放鬆」、「不刺眼」的感覺，降低社交焦慮。
--->
+---
+title: 子萱的故事：孤單的觀察者 (1/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-white/10 border border-white/20 text-xs font-mono tracking-widest text-gray-400">SCENE 01: 校園一角</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-gray-400">孤單的觀察者</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">16 歲的楊子萱，升上高中已經一年多了，沒有和國中好友上同一所學校的她在人群當中形同隱身。沒有被霸凌，但也沒有朋友。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-gray-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0 text-gray-300 bg-white/5 rounded-r-lg">性格害羞、慢熟的她，常常獨自一人站在走廊，看著同學們三五成群地聊天，心裡渴望著連結，卻不知如何開口。</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-gray-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona1.png" class="relative w-72 h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：渴望與退縮 (2/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-red-500/10 border border-red-500/20 text-xs font-mono tracking-widest text-red-400">SCENE 02: 房間裡的微光</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-red-400">渴望與退縮</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">回到房間，滑著 IG，看到以前最要好的國中同學發了新動態，已經有了自己的新小團體。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-red-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0 text-red-300 bg-white/5 rounded-r-lg">「班上的小圈圈大致已經形成了，自己突然又硬要加入別人，有點說不上的尷尬。想到這邊，子萱又打退堂鼓了...」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-red-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona2.png" class="relative w-72 h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform -rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：迷失在選擇中 (3/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-orange-500/10 border border-orange-500/20 text-xs font-mono tracking-widest text-orange-400">SCENE 03: 佈告欄前</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-orange-400">迷失在選擇中</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">想著透過加入社團認識朋友，但在布告欄前看著各社團百花撩亂的海報，她遲遲無法下決定。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-orange-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0 text-orange-300 bg-white/5 rounded-r-lg">「海報並沒有各種社員的資訊... 萬一裡面同學和自己電波對不上怎麼辦？社團可是要待滿整個學期的！」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-orange-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona3.png" class="relative w-72 h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：發現新契機 (4/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-yellow-500/10 border border-yellow-500/20 text-xs font-mono tracking-widest text-yellow-400">SCENE 04: 轉角的偶遇</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-yellow-400">發現新契機</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">放學後，子萱在學校角落偶然看見了一個顯眼的海報，介紹了一款主打「無壓力」的社交平台。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-yellow-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0 text-yellow-300 bg-white/5 rounded-r-lg">「子萱試探性的掃描海報上的 QR code，進入程式一探究竟。這或許是踏出全新社交行動的第一步！」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-yellow-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona4.png" class="relative w-72 h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform -rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：初次接觸 (5/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-green-500/10 border border-green-500/20 text-xs font-mono text-green-400">SCENE 05: 進入應用程式</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-green-400">初次接觸</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">子萱打開 App，映入眼簾的是柔和的歡迎畫面。點擊『探索活動』，活動卡片整齊排列。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-green-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-green-300 bg-white/5 rounded-r-lg">「這真的有比學校社團還要好嗎？活動看起來好多，我該從哪裡開始？」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center h-[480px] w-[240px]">
+    <div class="absolute -inset-4 bg-green-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/website/Screenshot_20251214_022316.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/10 transform -rotate-1" />
+    <img v-click src="/images/website/Screenshot_20251214_022322.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/20 transform rotate-1 z-10" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：嘗試與卻步 (6/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-red-500/10 border border-red-500/20 text-xs font-mono text-red-400">SCENE 06: 探索與猶豫</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-red-400">嘗試與卻步</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">她點開一個「大地遊戲」，發現標籤寫著「高互動」且「適合外向者」。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-red-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-red-300 bg-white/5 rounded-r-lg">「這種場合... 需要快速破冰，我可能還是沒辦法融入吧。」她感到一陣壓力，手指懸在半空。</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center h-[480px] w-[240px]">
+    <div class="absolute -inset-4 bg-red-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/website/Screenshot_20251214_022335.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/10 transform rotate-1" />
+    <img v-click src="/images/website/Screenshot_20251214_022350.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/20 transform -rotate-1 z-10" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：掌握主控權 (7/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-teal-500/10 border border-teal-500/20 text-xs font-mono text-teal-400">SCENE 07: 篩選與鎖定</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-teal-400">掌握主控權</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">還好有篩選器！她拉動拉桿將社交強度調低。出現了一個「靜態攝影散步」。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-teal-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-teal-300 bg-white/5 rounded-r-lg">「適合新手、歡迎安靜的人... 這正是我要的！不用自我介紹，只要一起拍照就好。」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center h-[480px] w-[240px]">
+    <div class="absolute -inset-4 bg-teal-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/website/Screenshot_20251214_022417.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/10 transform -rotate-1" />
+    <img v-click src="/images/website/Screenshot_20251214_022433.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/20 transform rotate-1 z-10" />
+  </div>
+</div>
 
 ---
 
-## 子萱的故事：渴望與挫敗 (1/5)
+## 解決方案：活動篩選邏輯
 
-<div class="flex flex-row align-center gap-4">
+<div class="grid grid-cols-[1.5fr_1fr] gap-4 mt-2">
 
 <div>
-  <h3 class="mt-4">
-    場景：孤單卻渴望社交
-  </h3>
-  <p>
-    在房間滑到社群軟體上，以前最要好的國中同學也已經有自己的新的小團體，這讓子萱不禁開始思考，是時候也該建立自己高中的社交圈了？
-  </p>
-
-  <blockquote class="p-4">「班上的小圈圈大致已經形成了，自己突然又硬要加入別人，有點說不上的尷尬。想到這邊，子萱又打退堂鼓了...」</blockquote>
-</div>
-
-<img src="/images/persona/persona1.png" class="w-72 h-108 rounded-lg object-cover shadow-lg">
-
-</div>
-
-<!--
-為了讓大家更有感，我們將透過子萱的故事來展示 App 的功能。故事的開始，是大家都很熟悉的場景：滑著 IG，看著別人的精彩生活，感到自己的孤單。這是我們設計的出發點——回應這份渴望。
--->
-
----
-layout: two-cols
----
-
-## 子萱的故事：校園社交的瓶頸 (2/5)
-**場景：一般的社交管道**
-
-本來想著透過加入學校中百百種社團來認識新朋友，但在布告欄前看著各社團百花撩亂的招生海報，遲遲無法下決定。
-
-<br>
-
-> 「海報並沒有各種社員的資訊以及內部實際情形…萬一裡面同學和自己電波對不上怎麼辦？社團可是要待滿整個學期的！各種憂慮下，行動又以失敗告終。」
-
-<p class="text-xs text-white/60 mt-2">資料來源: `data/user_story_extracted_text.txt`</p>
-
-::right::
-
-<div class="p-4 mt-8">
-  <div class="w-full h-64 bg-gray-800/50 rounded-xl flex items-center justify-center border border-white/10">
-    <p class="text-white/50 italic">（示意圖：繁雜的社團海報與猶豫的少女）</p>
-  </div>
-</div>
-
-<!--
-子萱嘗試過傳統管道，但失敗了。因為社團海報的資訊不透明，她無法預期加入後的氛圍。這也點出了我們平台的設計重點：必須提供足夠的「預期性」資訊。
--->
-
----
-layout: two-cols
----
-
-## 子萱的故事：發現新管道 (3/5)
-
-**場景：台南公園社交平台**
-
-放學後，子萱在學校的布告欄中偶然看見了一個顯眼的海報，介紹了一款 App 可以提供無壓力的管道。
-
-<br>
-
-> 「子萱試探性的掃描海報上的 QR code，進入程式一探究竟。作為社交初學者，她先從簡單的『參加活動』開始吧！」
-
-<p class="text-xs text-white/60 mt-2">資料來源: `data/user_story_extracted_text.txt`</p>
-
-::right::
-
-<div class="p-4 mt-8">
-  <div class="w-full h-64 bg-gray-800/50 rounded-xl flex items-center justify-center border border-white/10">
-    <p class="text-white/50 italic">（示意圖：掃描 QR Code 的瞬間）</p>
-  </div>
-</div>
-
-<!--
-就在這時，她發現了我們的平台。主打「無壓力」的訴求，立刻擊中了她的痛點。
--->
-
----
-layout: two-cols
----
-
-## 子萱的故事：透明化預期 (4/5)
-
-**場景：篩選與確定**
-
-她避開了一個適合「開朗活潑」朋友的大地遊戲，因為活動介紹寫得非常詳細。
-
-<br>
-
-> 「子萱透過篩選拉條選擇了靜態且低社交的攝影活動。主持人描述的氛圍感讓她很喜歡，加上留言也歡迎新手，讓她十分放心，終於報名參加！」
-
-<p class="text-xs text-white/60 mt-2">資料來源: `data/user_story_extracted_text.txt`</p>
-
-::right::
-
-<div class="p-4 mt-8">
-  <div class="w-full h-64 bg-gray-800/50 rounded-xl flex items-center justify-center border border-white/10">
-    <p class="text-white/50 italic">（示意圖：App 上的溫暖留言與篩選成功）</p>
-  </div>
-</div>
-
-<!--
-進入 App 後，子萱利用篩選器避開了那些會讓她壓力山大的活動。她選擇了一個靜態的攝影活動，因為主持人的描述讓她感到安心。這證明了「資訊透明」對於降低社交焦慮的重要性。
--->
-
----
-layout: two-cols
----
-
-## 子萱的故事：溫暖的連結 (5/5)
-
-**場景：活動現場與收穫**
-
-當天雖然仍有焦慮，但手機跳出其他參加者的關心訊息，讓她安心不少。
-
-<br>
-
-> 「沿著燕湖步道慢慢散步，拍下夕陽與樹影，聊著學校和興趣。公園草地的小野餐裡，子萱被笑聲與燈光包圍，感覺自己終於有了一群可以約出來的朋友。」
-
-<p class="text-xs text-white/60 mt-2">資料來源: `data/user_story_extracted_text.txt`</p>
-
-::right::
-
-<div class="p-4 mt-8">
-  <div class="w-full h-64 bg-gray-800/50 rounded-xl flex items-center justify-center border border-white/10">
-    <p class="text-white/50 italic">（示意圖：黃昏下的草地野餐，笑聲不斷）</p>
-  </div>
-</div>
-
-<!--
-故事的結局，子萱不僅成功參加了活動，還交到了朋友。這一切，都源於我們平台為她搭建的那座安全橋樑。
--->
-
----
-
-## 解決方案：活動篩選邏輯 (Activities Page)
 
 我們在 `Activities.tsx` 中實作了強大的篩選邏輯，確保子萱能精確找到符合她心理預期的活動。
 
-**資料來源: `data/website/pages/Activities.tsx`**
+<div class="text-xs">
 
-```tsx {all|10-12|14-16|20-22}
+```tsx {all|3-8|4}
 // Activities.tsx: 篩選邏輯
-const filteredActivities = mockActivities.filter((activity) => {
-  // 1. 搜尋關鍵字
-  const nameMatch = activity.name.toLowerCase().includes(search.toLowerCase());
-  
-  // 2. 核心功能：社交強度篩選 (Social Level Filter)
-  // 將滑桿數值 (1-5) 對應到活動的社交等級
-  const levelMatch = (activity.socialLevel + 1) >= socialLevel[0] && 
-                   (activity.socialLevel + 1) <= socialLevel[1];
+const filteredActivities = activities.filter((activity) => {
+  const nameMatch = /* ... */
+  const levelMatch = /* ... */
+  const tagsMatch = /* ... */
+  const groupSizeMatch = /* ... */
+  const dateMatch = /* ... */
+  const verificationMatch = /* ... */
 
-  // 3. 興趣標籤篩選
-  const tagsMatch = selectedTags.length === 0 || 
-                  selectedTags.every((tag) => activity.tags.includes(tag));
-
-  // 4. 群體大小與日期篩選
-  const groupSizeMatch = /* ... logic ... */;
-  const dateMatch = /* ... logic ... */;
-
-  return nameMatch && levelMatch && tagsMatch && groupSizeMatch && dateMatch;
+  return nameMatch && levelMatch && tagsMatch 
+      && dateMatch && groupSizeMatch && verificationMatch;
 });
 ```
 
-<div class="mt-4 text-left text-sm backdrop-blur-sm bg-white/5 p-3 rounded-lg">
-  <p class="font-bold text-teal-300">對應設計理念：</p>
-  <p>透過 `levelMatch` 變數，我們讓使用者能過濾掉那些「太過熱情」或「太過冷漠」的活動，確保每一次的曝光都是精準的。</p>
+</div>
+
+</div>
+
+<div class="flex items-center justify-center">
+  <img src="/images/website/Screenshot_20251214_022417.jpg" class="relative h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform -rotate-1 hover:rotate-0 transition-transform duration-500">
+</div>
+
 </div>
 
 <!--
@@ -867,127 +1048,106 @@ const filteredActivities = mockActivities.filter((activity) => {
 -->
 
 ---
+title: 子萱的故事：建立自我與承諾 (8/12)
+---
 
-## 解決方案：個人檔案設計 (Profile Page)
-
-在 `Profile.tsx` 中，我們設計了「個性風格滑桿」，讓使用者能以非文字的方式展現自我。
-
-**資料來源: `data/website/pages/Profile.tsx`**
-
-```tsx {all|17-21|26-30}
-// Profile.tsx: 個性風格滑桿元件
-<Card className="bg-white/5 ...">
-  <h3 class="font-semibold text-lg">個性風格</h3>
-  <div class="space-y-4">
-    <div>
-      <div class="flex justify-between text-sm text-gray-400 mb-1">
-        <span>獨處充電</span>
-        <span>和人互動充電</span>
-      </div>
-      <Slider defaultValue={[initialPersonalitySliders.socialEnergy]} />
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-indigo-500/10 border border-indigo-500/20 text-xs font-mono text-indigo-400">SCENE 08: 確認與加入</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-indigo-400">建立自我與承諾</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">看了看留言區溫暖的回覆，她終於鼓起勇氣。填寫了簡單的個性檔案，按下「參加」。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-indigo-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-indigo-300 bg-white/5 rounded-r-lg">「在『我的活動』裡看到它出現的那一刻，我覺得自己邁出了一大步。」</blockquote>
     </div>
-    <div>
-      <div class="flex justify-between text-sm text-gray-400 mb-1">
-        <span>比較常聽</span>
-        <span>比較常說</span>
-      </div>
-      <Slider defaultValue={[initialPersonalitySliders.talkativeness]} />
-    </div>
-    {/* 其他維度: 慢節奏/快節奏, 偏觀察/偏主動, 隨性/規劃 */}
   </div>
-</Card>
-```
-
-<!--
-在個人檔案頁，我們也花了很多心思。傳統的自介對很多人來說壓力很大，所以我們設計了「個性風格滑桿」，讓使用者用更直觀的方式來表達自己。
--->
+  <div class="relative justify-self-center h-[480px] w-[240px]">
+    <div class="absolute -inset-4 bg-indigo-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/website/Screenshot_20251214_022447.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/10 transform rotate-2" />
+    <img v-click src="/images/website/Screenshot_20251214_022548.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/15 transform -rotate-1 z-10" />
+    <img v-click src="/images/website/Screenshot_20251214_022612.jpg" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl border border-white/20 transform rotate-1 z-20" />
+  </div>
+</div>
 
 ---
-
-## 解決方案：安全感與信任機制
-
-為了確保線下見面的安全，我們在 `MyActivities.tsx` 與 `Safety.tsx` 中實作了驗證與安全功能。
-
-<div class="grid grid-cols-2 gap-4 text-left">
-<div>
-
-**資料來源: `data/website/pages/MyActivities.tsx`**
-```tsx
-// 活動審核狀態 (Stepper)
-const statusToStep = (status) => {
-  switch (status) {
-    case "pending": return 1;
-    case "reviewing": return 2;
-    case "verified": return 3;
-  }
-};
-// ... Stepper UI Component ...
-```
-<p class="text-xs text-white/70 mt-2">讓發起者清楚知道活動審核進度，建立平台公信力。</p>
-
-</div>
-<div>
-
-**資料來源: `data/website/pages/Safety.tsx`**
-```tsx
-// 緊急應變指南
-<Card>
-  <h3 class="...">緊急應變指南</h3>
-  <p>【快速脫身指南】</p>
-  <ul>
-    <li>「我突然想到家裡有事，得先走一步。」</li>
-    <li>「我突然有點頭暈，想找個地方休息。」</li>
-  </ul>
-  <Button variant="destructive">舉報問題</Button>
-</Card>
-```
-<p class="text-xs text-white/70 mt-2">提供具體的「脫身話術」，降低使用者對未知狀況的恐懼。</p>
-
-</div>
-</div>
-
-<!--
-除了媒合，我們更重視安全。左邊的程式碼展示了我們的活動審核機制，確保平台上的活動都是經過過濾的。右邊則是我們獨創的「安全頁面」，裡面甚至包含了「快速脫身指南」，教使用者如果覺得不舒服，可以怎麼禮貌地離開。這些細節，都是為了給予使用者最大的安全感。
--->
-
+title: 子萱的故事：踏出第一步 (9/12)
 ---
 
-## 解決方案：我的朋友 (CRM)
-
-在 `Friends.tsx` 中，我們設計了一個輕量化的關係管理系統，讓子萱能延續活動中的連結。
-
-**資料來源: `data/website/pages/Friends.tsx`**
-
-```tsx {all|12-16|25-29}
-// Friends.tsx: 朋友列表與筆記功能
-const friends = [
-  {
-    name: "teamtaro",
-    metAt: "公園小隊挑戰", // 記錄相遇場合
-    notes: "上次的跳拍任務超好笑 😂", // 私人筆記功能
-  },
-  // ...
-];
-
-export default function FriendsPage() {
-  return (
-    // ...
-    <div className="space-y-2">
-      <h4 className="font-semibold text-white">關於 {friend.name} 的筆記:</h4>
-      <Textarea
-        defaultValue={friend.notes}
-        placeholder={`關於 ${friend.name} 的一些筆記...`}
-        className="bg-transparent border-dashed text-gray-300"
-      />
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-blue-500/10 border border-blue-500/20 text-xs font-mono tracking-widest text-blue-400">SCENE 09: 出發前的焦慮</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-blue-400">踏出第一步</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">活動當天，子萱在公園入口徘徊，心中仍有不安：「萬一他們不喜歡我怎麼辦？」</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-blue-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-blue-300 bg-white/5 rounded-r-lg">「直到手機裡跳出其他的活動參加者傳來的關心訊息，才讓子萱安心了不少，終於會合。」</blockquote>
     </div>
-    // ...
-  );
-}
-```
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-blue-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona5.png" class="relative w-108 rounded-2xl object-cover shadow-2xl border border-white/10 transform rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
 
-<!--
-社交不應該止於活動結束。我們的「我的朋友」頁面，不僅僅是好友列表，更像是一個個人的社交筆記本。子萱可以記錄下她對每個朋友的印象，這能幫助她在下次見面時，更容易打開話題，延續這份得來不易的友誼。
--->
+---
+title: 子萱的故事：溫暖的迎接 (10/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-indigo-500/10 border border-indigo-500/20 text-xs font-mono tracking-widest text-indigo-400">SCENE 10: 破冰</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-indigo-400">溫暖的迎接</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">一到地點大家已經到了。沒有尷尬的冷場，大家熱情地對著子萱揮手，氣氛自然友善。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-indigo-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-indigo-300 bg-white/5 rounded-r-lg">「子萱有點不好意思的小跑步過去與大家一一打招呼，但心中的大石早已放下不少。」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-indigo-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona6.png" class="relative w-72 h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform -rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：自然的連結 (11/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-purple-500/10 border border-purple-500/20 text-xs font-mono tracking-widest text-purple-400">SCENE 11: 並肩同行</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-purple-400">自然的連結</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">黃昏時分，大家沿著步道慢慢散步。不用刻意找話題，光是討論夕陽的角度就很自然。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-purple-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-purple-300 bg-white/5 rounded-r-lg">「一邊用手機拍下夕陽，一邊聊著興趣，子萱自然地走在隊伍中央，享受這份寧靜。」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-purple-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona7.png" class="relative w-72 h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
+
+---
+title: 子萱的故事：歸屬感 (12/12)
+---
+
+<div class="grid grid-cols-[1fr_320px] gap-12 items-center h-full">
+  <div class="space-y-6">
+    <div class="inline-block px-3 py-1 rounded bg-pink-500/10 border border-pink-500/20 text-xs font-mono tracking-widest text-pink-400">SCENE 12: 收穫</div>
+    <h2 class="text-4xl font-bold text-white">子萱的故事：<span class="text-pink-400">歸屬感</span></h2>
+    <p class="text-lg leading-relaxed opacity-80">活動結束後，大家在草地上小野餐。子萱意識到，這就是她一直在尋找的社交節奏。</p>
+    <div class="relative mt-8">
+      <div class="absolute -left-4 top-0 bottom-0 w-1 bg-pink-500/50"></div>
+      <blockquote class="pl-6 py-2 text-md !border-0  text-pink-300 bg-white/5 rounded-r-lg">「子萱被笑聲與燈光包圍，感覺自己終於有了一群可以約出來的朋友，心中充滿暖意。」</blockquote>
+    </div>
+  </div>
+  <div class="relative justify-self-center">
+    <div class="absolute -inset-4 bg-pink-500/10 rounded-full blur-3xl"></div>
+    <img src="/images/persona/persona8.png" class="relative w-72 h-[450px] rounded-2xl object-cover shadow-2xl border border-white/10 transform -rotate-1 hover:rotate-0 transition-transform duration-500" />
+  </div>
+</div>
 
 ---
 
@@ -995,19 +1155,23 @@ export default function FriendsPage() {
 
 我們並非憑空想像使用者的反應。我們將 Persona 資料與網站程式碼輸入 Gemini AI，進行了一場深度的角色扮演測試。
 
-<div class="mt-8 scale-110">
-  ```mermaid
-  graph LR
-  A[Persona Data<br>(楊子萱)] --> C{Gemini AI}
-  B[Website Code<br>(React)] --> C
-  C --> D[Role-play Scenario<br>(模擬情境)]
-  D --> E[Feedback & Iteration<br>(回饋與迭代)]
-  ```
+<div class="mt-8 flex justify-center">
+<div class="w-2/3">
+
+```mermaid
+graph LR
+A[楊子萱 Persona 資料] --> C((Gemini AI))
+B[網站程式碼] --> C
+C --> D[模擬情境]
+D --> E[回饋與迭代]
+```
+
+</div>
 </div>
 
 <div class="mt-8 text-sm text-left backdrop-blur-sm bg-white/5 p-4 rounded-lg border border-white/10">
-  <p class="font-bold text-teal-300">為什麼使用 AI 角色扮演？</p>
-  <p class="text-white/80 mt-2">透過 AI 模擬楊子萱在面對真實程式碼（如 `Activities.tsx` 的篩選邏輯）時的心理活動，我們能挖掘出人類設計師容易忽略的微小焦慮。</p>
+  <p class="font-bold">為什麼使用 AI 角色扮演？</p>
+  <p class="text-white/80 mt-2">透過 AI 模擬楊子萱在面對網站的設計時的心理活動，我們能挖掘出人類設計師容易忽略的微小焦慮。</p>
 </div>
 
 <!--
@@ -1016,27 +1180,80 @@ export default function FriendsPage() {
 
 ---
 
-## AI 建議的關鍵功能迭代
+## AI 建議：更符合青少年的個人檔案設計
 
-許多貼心的功能，其實是來自 AI 楊子萱的直接建議，而非我們的原始構想。
-
-<div class="grid grid-cols-2 gap-8 text-left mt-8">
-  <div v-click class="p-4 bg-teal-500/10 border border-teal-500/20 rounded-lg">
-    <h3 class="font-bold text-xl mb-2 text-teal-300">1. 我的朋友 (CRM)</h3>
-    <p class="text-xs text-white/60 mb-2">原始痛點：AI 子萱表示「我記性不好，怕下次見面忘記對方喜歡什麼，會很尷尬」。</p>
-    <p class="text-sm text-white/90">👉 **迭代**：我們新增了 **`Friends.tsx`** 中的筆記功能，讓她能記錄「對方喜歡拍貓」、「上次聊了電影」，作為下次互動的作弊小抄。</p>
+<div class="grid grid-cols-[1fr_2fr] gap-8 mt-4 items-center h-[100px]">
+  <div v-click class="flex flex-col items-center space-y-4">
+    <div class="px-3 py-1 rounded bg-red-500/10 border border-red-500/20 text-xs font-mono text-red-400">BEFORE</div>
+    <div class="relative group p-4 border border-red-500/20 rounded-lg">
+      <div class="absolute -inset-4 bg-red-500/5 rounded-lg blur-2xl"></div>
+      <img src="/images/website/Screenshot_20251214_022533.jpg" class="relative h-[340px] w-[170px] rounded-lg shadow-xl border border-white/10 object-cover grayscale opacity-50 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100" />
+      <div class="mt-2 text-center text-[10px] text-red-300/70 font-mono">單調且暴露隱私</div>
+    </div>
   </div>
-  <div v-click class="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
-    <h3 class="font-bold text-xl mb-2 text-red-300">2. 安全與快速脫身</h3>
-    <p class="text-xs text-white/60 mb-2">原始痛點：AI 子萱提到「如果活動很無聊或我不舒服，我不知道怎麼禮貌地離開，這讓我不敢參加」。</p>
-    <p class="text-sm text-white/90">👉 **迭代**：我們在 **`Safety.tsx`** 中加入了「快速脫身指南」，提供具體的理由與話術，賦予她隨時退出的勇氣。</p>
+
+  <div v-click="2" class="flex flex-col items-center space-y-4">
+    <div class="px-3 py-1 rounded bg-teal-500/10 border border-teal-500/20 text-xs font-mono text-teal-400 font-bold">AFTER</div>
+    <div class="relative flex gap-3 p-4 bg-teal-500/5 border border-teal-500/20 rounded-lg backdrop-blur-sm">
+      <div class="absolute -inset-4 bg-teal-500/10 rounded-lg blur-3xl"></div>
+      <div class="relative">
+        <img src="/images/website/Screenshot_20260102_002516.jpg" class="h-[340px] w-[170px] rounded-lg shadow-2xl border border-white/20 object-cover transform -rotate-1 hover:rotate-0 transition-transform duration-500" />
+        <span 
+          v-mark.circle.red="3"
+          class="absolute top-58% left-46% w-20 h-30"
+        ></span>
+        <div class="mt-2 text-center text-[10px] text-teal-300/70 font-mono">自定義資料可見度</div>
+      </div>
+      <div class="relative">
+        <img src="/images/website/Screenshot_20260102_002522.jpg" class="h-[340px] w-[170px] rounded-lg shadow-2xl border border-white/20 object-cover transform rotate-1 hover:rotate-0 transition-transform duration-500" />
+        <div class="mt-2 text-center text-[10px] text-teal-300/70 font-mono">個性風格滑桿</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+AI 告訴我們，內向者在見面前最怕「無話可說」。如果能在檔案裡就看到對方的生活照、星座或最愛的三個興趣，會大大降低心理門檻。因此我們將原本單調的檔案改版，加入了更多「生活感」的元素，讓使用者在不開口的情況下，也能建立立體的個人形象。
+-->
+
+---
+
+## AI 建議：社交安全與連結
+
+AI 的建議讓我們意識到，社交安全不只是「保護」，更是「賦予掌控感」與「獲得回饋」。
+
+<div class="grid grid-cols-3 gap-4 text-left mt-2">
+  
+<div v-click class="p-3 bg-teal-500/10 border border-teal-500/20 rounded-lg flex flex-col items-center">
+  <h4 class="font-bold mb-2 text-teal-300 w-full text-left text-xs">1. 朋友互動與筆記</h4>
+  <img src="/images/website/Screenshot_20260101_220653.jpg" class="h-48 rounded shadow-lg border border-white/10 object-contain mb-2">
+  <div class="text-white/80 leading-tight w-full">
+    <p class="text-[10px] text-teal-200 ">「我怕下次見面沒話聊。」</p>
+    <p class="text-[10px] text-white/60 mt-1">👉 **實作：** 私人筆記記錄同好細節，並整合即時訊息與活動邀請功能。</p>
   </div>
 </div>
 
-<p class="text-xs text-white/60 mt-8 text-left">資料來源: `data/modification_report_based_on_verification.md`</p>
+<div v-click class="p-3 bg-red-500/10 border border-red-500/20 rounded-lg flex flex-col items-center">
+  <h4 class="font-bold mb-2 text-red-300 w-full text-left text-xs">2. 安全地圖與脫身指南</h4>
+  <img src="/images/website/Screenshot_20260101_220657.jpg" class="h-48 rounded shadow-lg border border-white/10 object-contain mb-2">
+  <div class="text-white/80 leading-tight w-full">
+    <p class="text-[10px] text-red-200 ">「怕被困在尷尬場合。」</p>
+    <p class="text-[10px] text-white/60 mt-1">👉 **實作：** 公園安全照明地圖與禮貌脫身話術，確保物理與心理的雙重安全。</p>
+  </div>
+</div>
+
+<div v-click class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-lg flex flex-col items-center">
+  <h4 class="font-bold mb-2 text-blue-300 w-full text-left text-xs">3. 多維度回饋系統</h4>
+  <img src="/images/website/Screenshot_20260101_220643.jpg" class="h-48 rounded shadow-lg border border-white/10 object-contain mb-2">
+  <div class="text-white/80 leading-tight w-full">
+    <p class="text-[10px] text-blue-200 ">「我表現得好嗎？」</p>
+    <p class="text-[10px] text-white/60 mt-1">👉 **實作：** 引入同儕肯定系統，在通知中傳達「你是安靜但讓人安心的夥伴」。</p>
+  </div>
+</div>
+
+</div>
 
 <!--
-這次的 AI 角色扮演帶來了兩個巨大的驚喜。首先，AI 告訴我們她很怕忘記新朋友的細節，所以我們開發了「朋友筆記」功能。其次，也是最讓我們意外的，是她對於「如何離開」的焦慮。這促使我們開發了「快速脫身指南」。這些功能不是憑空而來，而是 AI 幫助我們看見了使用者內心最深處的不安。
+透過 AI 的角色扮演，我們實作了許多具備人性的功能。例如「朋友筆記」讓使用者可以記錄對方的喜好；「安全地圖」標示了照明區與求助電話；而最溫暖的是「同儕回饋」，當子萱收到通知說有人覺得她是個讓人安心的同行者時，這比任何功能都能降低她的社交焦慮。
 -->
 
 ---
@@ -1054,21 +1271,47 @@ layout: section
 
 ## 專案價值
 
-<div class="grid grid-cols-3 gap-8 text-left pt-8">
-  <div>
-    <div class="i-carbon-user-favorite w-12 h-12 text-green-400 mb-2"></div>
-    <h3 class="font-bold text-xl mb-2">對使用者</h3>
-    <p class="text-sm text-white/80">提供一個「社交新手村」。在這裡，犯錯是被允許的，沉默是沒關係的。它賦予了使用者在公共空間中「合法」獨處或進行輕社交的權利。</p>
+<div class="grid grid-cols-3 gap-8 mt-25">
+  <div class="relative group p-6 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500 shadow-xl">
+    <div class="absolute -top-6 left-6">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center shadow-lg shadow-green-500/20">
+        <mdi-account-heart class="text-3xl text-white" />
+      </div>
+    </div>
+    <div class="mt-6 space-y-3">
+      <h3 class="font-bold text-2xl text-green-400">對使用者</h3>
+      <p class="text-md leading-relaxed text-gray-300">
+        打造一個<span class="text-white font-semibold">「社交新手村」</span>。在這裡，犯錯是被允許的，沉默是沒關係的。它賦予了使用者在公共空間中「合法」獨處或進行輕社交的權利。
+      </p>
+    </div>
   </div>
-  <div>
-    <div class="i-carbon-park w-12 h-12 text-teal-400 mb-2"></div>
-    <h3 class="font-bold text-xl mb-2">對公園</h3>
-    <p class="text-sm text-white/80">讓被忽視的青少年族群重新與公園產生連結。公園不再只是長輩的運動場或小孩的遊樂區，它也可以是年輕人建立歸屬感的第三空間。</p>
+
+  <div class="relative group p-6 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500 shadow-xl">
+    <div class="absolute -top-6 left-6">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-yellow-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
+        <mdi-pine-tree class="text-3xl text-white" />
+      </div>
+    </div>
+    <div class="mt-6 space-y-3">
+      <h3 class="font-bold text-2xl text-orange-400">對公園</h3>
+      <p class="text-md leading-relaxed text-gray-300">
+        讓被忽視的青少年族群重新與公園產生連結。公園不再只是長輩的運動場，更是年輕人建立歸屬感的<span class="text-white font-semibold">第三空間</span>。
+      </p>
+    </div>
   </div>
-  <div>
-    <div class="i-carbon-connect w-12 h-12 text-sky-400 mb-2"></div>
-    <h3 class="font-bold text-xl mb-2">對社會</h3>
-    <p class="text-sm text-white/80">提出一個緩解現代人孤獨感的可能解方。它證明了，有時候我們需要的不是更多的連結，而是「更舒適的連結」。</p>
+
+  <div class="relative group p-6 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500 shadow-xl">
+    <div class="absolute -top-6 left-6">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center shadow-lg shadow-sky-500/20">
+        <mdi-share-variant class="text-3xl text-white" />
+      </div>
+    </div>
+    <div class="mt-6 space-y-3">
+      <h3 class="font-bold text-2xl text-sky-400">對社會</h3>
+      <p class="text-md leading-relaxed text-gray-300">
+        緩解現代孤獨感的可能解方。它證明了，有時候我們需要的不是更多的連結，而是<span class="text-white font-semibold">「更舒適的連結」</span>。
+      </p>
+    </div>
   </div>
 </div>
 
@@ -1081,25 +1324,10 @@ layout: center
 class: text-center
 ---
 
-# <span class="bg-gradient-to-r from-blue-300 to-emerald-300 bg-clip-text text-transparent font-bold text-5xl italic tracking-tighter">認識朋友，可以是一種舒適的選擇。</span>
+# <span class="bg-gradient-to-r from-blue-300 to-emerald-300 bg-clip-text text-transparent font-bold text-5xl tracking-tighter">認識朋友，可以是一種舒適的選擇。</span>
 
 <p class="mt-20 text-white/40 font-mono text-xs tracking-[0.4em] uppercase font-light">Thank you</p>
 
 <!--
 我們相信，透過好的設計，認識朋友，可以是一種舒適的選擇。這就是我們今天的報告。謝謝大家。
--->
-
----
-layout: default
----
-
-# Q & A
-
-<div class="h-full flex flex-col justify-center items-center opacity-30 italic">
-  <p class="text-4xl text-white font-light">討論與反饋</p>
-  <div class="mt-8 w-16 h-0.5 bg-white rounded-full"></div>
-</div>
-
-<!--
-謝謝大家，接下來是問答時間。
 -->
