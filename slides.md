@@ -11,10 +11,20 @@ speaker: true
 ---
 
 # <span class="text-white drop-shadow-xl text-6xl font-bold">台南公園輕社交平台</span>
-<p class="text-white/80 tracking-widest mt-4 block font-light text-2xl">使用者經驗設計個案研究</p>
+<p class="text-white/50 tracking-widest mt-4 block font-light text-2xl">使用者經驗設計個案研究</p>
+
+<div class="flex gap-2 font-mono items-center justify-center text-sm mx-auto">
+    <span class="text-white/30 font-bold">Team #2</span>
+    <span class="text-white/30 mx-2">/</span>
+    <span class="text-white/30">講者：</span>
+    <span class="text-white/20">郭彥均</span>
+    <span class="text-white/30 mx-2">/</span>
+    <span class="text-white/30">組員：</span>
+    <span class="text-white/20">黃伯鈞、沈曉瑩、郭緯綸</span>
+</div>
 
 <!--
-大家好，我們是第四組。今天要與大家分享的主題是「台南公園輕社交平台」。
+大家好，我們是第 2 組。今天要與大家分享的主題是「台南公園輕社交平台」。
 
 這是一個專為台南害羞、慢熟的青少年設計的數位解方。我們發現，現在雖然有很多交友軟體也很多社交平台，但對於內向的人來說，要跨出第一步還是很困難。
 
