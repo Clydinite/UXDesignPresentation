@@ -832,68 +832,7 @@ style Main fill:#ff9999,color:#222,stroke:#333,stroke-width:4px
 
 這就是設計界常用的 JTBD 框架。大家可以看表格：子萱的需求其實很細微。她不是「想要交朋友」，而是「想要在看活動時，先確認這是不是那種會逼人上台表演的聚會」。她雇用我們的產品，是為了幫她「降低焦慮」、幫她「心理有底」。
 
-這張表把原本模糊的「害羞」，拆解成了四個具體的工作場景。這讓我們發現，設計不只是要做個聊天功能，更重要的是在活動前、中、後，提供足夠的「預知感」。只要能完成這些「微小的工作」，子萱自然就有勇氣跨出第一步。
--->
-
----
-
-## 核心問題定義：How Might We (HMW)
-
-基於 JTBD，我們發想了 12 個設計機會點 (HMW)，引導我們進入解決方案的發想。
-
-<v-clicks after>
-  <div class="grid grid-cols-2 gap-4 text-left mt-4"> 
-    <div class="backdrop-blur-md bg-white/5 p-5 rounded-xl border border-white/10 flex flex-col h-full transition-all duration-500">
-      <div class="flex mb-3">
-        <span class="px-2 py-0.5 rounded bg-yellow-500/20 text-yellow-300 text-[10px] font-mono border border-yellow-500/30">
-          <b>HMW 3</b>
-        </span>
-      </div>
-      <h3 class="font-bold text-yellow-300 text-lg mb-2">社交與隱私</h3>
-      <p class="text-white/80 text-sm leading-relaxed">
-        朋友群訊息爆量時，我們如何設計能讓人短暫停下回訊息、不影響人流、又不造成視線壓力的小節點？
-      </p>
-    </div>
-    <div class="backdrop-blur-md bg-white/5 p-5 rounded-xl border border-white/10 flex flex-col h-full transition-all duration-500">
-      <div class="flex mb-3">
-        <span class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-300 text-[10px] font-mono border border-teal-500/30">
-          <b>HMW 5</b>
-        </span>
-      </div>
-      <h3 class="font-bold text-teal-300 text-lg mb-2">環境心理</h3>
-      <p class="text-white/80 text-sm leading-relaxed">
-        附近有人經過、視線不舒服時，如何以座位角度、背靠與微邊界，給她一個隱私？
-      </p>
-    </div>
-    <div class="backdrop-blur-md bg-white/5 p-5 rounded-xl border border-white/10 flex flex-col h-full transition-all duration-500">
-      <div class="flex mb-3">
-        <span class="px-2 py-0.5 rounded bg-red-500/20 text-red-300 text-[10px] font-mono border border-red-500/30">
-          <b>HMW 11</b>
-        </span>
-      </div>
-      <h3 class="font-bold text-red-300 text-lg mb-2">空間控制感</h3>
-      <p class="text-white/80 text-sm leading-relaxed">
-        如何讓她在不與人交談的情況下，能預約公園中隱蔽且有充電的特定座椅或小空間？
-      </p>
-    </div>
-    <div class="backdrop-blur-md bg-white/5 p-5 rounded-xl border border-white/10 flex flex-col h-full transition-all duration-500">
-      <div class="flex mb-3">
-        <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 text-[10px] font-mono border border-purple-500/30">
-          <b>HMW 12</b>
-        </span>
-      </div>
-      <h3 class="font-bold text-purple-300 text-lg mb-2">氛圍維持</h3>
-      <p class="text-white/80 text-sm leading-relaxed">
-        在認真的時候，看要怎麼鼓勵所有進入該區域的人維持低語或靜默，避免不當的打擾？
-      </p>
-    </div>
-  </div>
-</v-clicks>
-
-<!--
-確定了工作目標後，我們要把目標轉化為設計的挑戰。我們稱之為「我們該如何 (How Might We)」——這就像是把難題變成好玩的題目。
-
-我們在設計的過程當中來來回回改了許多次，導致了這些問題和我們最後做出來的成品不是很有關係，但絕對不是說他沒有用，這些問句，就是我們接下來要展示的 App 介面最原始的靈感來源。
+這張表把原本模糊的「害羞」，拆解成了 10 個具體的工作場景。這讓我們發現，設計不只是要做個聊天功能，更重要的是在活動前、中、後，提供足夠的「預知感」。只要能完成這些「微小的工作」，子萱自然就有勇氣跨出第一步。
 -->
 
 ---
@@ -1053,7 +992,7 @@ title: 子萱的故事：發現新契機 (4/12)
 </div>
 
 <div v-click class="absolute inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm transition-all duration-500">
-  <div class="p-8 rounded-lg shadow-2xl transform scale-110">
+  <div class="p-8 transform scale-110">
     <img src="/images/website/tainan_park_qr_code.png" class="w-64 h-64 rounded-lg" /> <p class="text-white text-center mt-4 font-bold tracking-widest">立即體驗 Demo</p>
   </div>
 </div>
@@ -1422,6 +1361,39 @@ AI 的建議讓我們意識到，社交安全不只是「保護」，更是「�
 第一是「朋友筆記」：解決她怕下次見面沒話聊的恐懼。
 第二是「脫身指南」：這在公園場域非常重要。我們提供了照明地圖與禮貌退出的話術，確保她如果不舒服，有權利優雅地離開。
 第三是「通知系統」：透過溫馨的提醒，幫她對抗臨行前的退縮心理。
+-->
+
+---
+
+## 真實使用者驗證
+
+我們針對高中及大學生進行了意向調查，驗證這些設計功能是否真正解決了社交恐懼。
+
+<div class="grid grid-cols-2 gap-6 mt-4">
+  <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+    <h3 class="text-teal-400 font-bold mb-2">最受好評的功能</h3>
+    <ul class="text-sm space-y-2 mt-8">
+      <li class="flex items-start gap-2">
+        <span><b>精確導航</b>：解決「到了現場找不到人，尷尬晃來晃去」的恐懼。</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span><b>社交強度拉桿</b>：使用者同意可以「把社交強度拉到最低」的功能，過濾掉太嗨的活動。</span>
+      </li>
+      <li class="flex items-start gap-2">
+        <span><b>安全地圖</b>：對於晚上出門或在公園尋找明亮區域感覺有實際幫助。</span>
+      </li>
+    </ul>
+  </div>
+  <div class="bg-white/5 p-4 rounded-xl border border-white/10 flex flex-col justify-center">
+    <h3 class="text-orange-400 font-bold mb-2">行動意願指標</h3>
+    <div>
+      <img src="/images/survey_results_plot.png" class="w-full h-full object-contain rounded-lg">
+    </div>
+  </div>
+</div>
+
+<!--
+多數受訪者表示「心動」，認為平台設計提供了離開棉被、走進公園的動力。
 -->
 
 ---
